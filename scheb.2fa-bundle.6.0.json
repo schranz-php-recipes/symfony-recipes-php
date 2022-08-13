@@ -1,0 +1,43 @@
+{
+    "manifests": {
+        "scheb/2fa-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Scheb\\TwoFactorBundle\\SchebTwoFactorBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/scheb_2fa.yaml": {
+                    "contents": [
+                        "# See the configuration reference at https://symfony.com/bundles/SchebTwoFactorBundle/6.x/configuration.html",
+                        "scheb_two_factor:",
+                        "    security_tokens:",
+                        "        - Symfony\\Component\\Security\\Core\\Authentication\\Token\\UsernamePasswordToken",
+                        "        - Symfony\\Component\\Security\\Http\\Authenticator\\Token\\PostAuthenticationToken",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/scheb_2fa.yaml": {
+                    "contents": [
+                        "2fa_login:",
+                        "    path: /2fa",
+                        "    defaults:",
+                        "        _controller: \"scheb_two_factor.form_controller::form\"",
+                        "",
+                        "2fa_login_check:",
+                        "    path: /2fa_check",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "1e6f68089146853a790b5da9946fc5974f6fcd49"
+        }
+    }
+}
