@@ -8,21 +8,23 @@
                 }
             },
             "files": {
-                "config/packages/translation.yaml": {
+                "config/packages/translation.php": {
                     "contents": [
-                        "framework:",
-                        "    default_locale: en",
-                        "    translator:",
-                        "        default_path: '%kernel.project_dir%/translations'",
-                        "        fallbacks:",
-                        "            - en",
-                        "#        providers:",
-                        "#            crowdin:",
-                        "#                dsn: '%env(CROWDIN_DSN)%'",
-                        "#            loco:",
-                        "#                dsn: '%env(LOCO_DSN)%'",
-                        "#            lokalise:",
-                        "#                dsn: '%env(LOKALISE_DSN)%'",
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->extension('framework', [",
+                        "        'default_locale' => 'en',",
+                        "        'translator' => [",
+                        "            'default_path' => '%kernel.project_dir%/translations',",
+                        "            'fallbacks' => ['en'],",
+                        "        ],",
+                        "    ]);",
+                        "};",
                         ""
                     ],
                     "executable": false
@@ -34,7 +36,7 @@
                     "executable": false
                 }
             },
-            "ref": "da64f5a2b6d96f5dc24914517c0350a5f91dee43"
+            "ref": "0d821754923c256a79c8567d46310176884dd674"
         }
     }
 }

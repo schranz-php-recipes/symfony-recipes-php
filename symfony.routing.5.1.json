@@ -7,39 +7,52 @@
                 }
             },
             "files": {
-                "config/packages/prod/routing.yaml": {
+                "config/packages/prod/routing.php": {
                     "contents": [
-                        "framework:",
-                        "    router:",
-                        "        strict_requirements: null",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/packages/routing.yaml": {
-                    "contents": [
-                        "framework:",
-                        "    router:",
-                        "        utf8: true",
+                        "<?php",
                         "",
-                        "        # Configure how to generate URLs in non-HTTP contexts, such as CLI commands.",
-                        "        # See https://symfony.com/doc/current/routing.html#generating-urls-in-commands",
-                        "        #default_uri: http://localhost",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->extension('framework', [",
+                        "        'router' => [",
+                        "            'strict_requirements' => null,",
+                        "        ],",
+                        "    ]);",
+                        "};",
                         ""
                     ],
                     "executable": false
                 },
-                "config/routes.yaml": {
+                "config/packages/routing.php": {
                     "contents": [
-                        "#index:",
-                        "#    path: /",
-                        "#    controller: App\\Controller\\DefaultController::index",
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->extension('framework', [",
+                        "        'router' => [",
+                        "            'utf8' => true,",
+                        "        ],",
+                        "    ]);",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes.php": {
+                    "contents": [
                         ""
                     ],
                     "executable": false
                 }
             },
-            "ref": "8c5b5f86ec3e4547cec9a3ae30c3b40ae51cab1f"
+            "ref": "31bc403a65c30bf5bbf721c52fcb0356374473af"
         }
     }
 }
