@@ -1,0 +1,6 @@
+{
+    "bundles": {
+        "Sensio\\Bundle\\FrameworkExtraBundle\\SensioFrameworkExtraBundle": ["all"]
+    },
+    "aliases": ["annotations", "annotation", "annot", "annots"]
+}

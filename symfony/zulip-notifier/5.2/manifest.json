@@ -1,0 +1,5 @@
+{
+    "env": {
+        "#1": "ZULIP_DSN=zulip://EMAIL:TOKEN@HOST?channel=CHANNEL"
+    }
+}
