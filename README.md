@@ -27,7 +27,7 @@ composer create-project schranz/symfony-php-skeleton
 
 **symfony/website-skeleton clone:**
 
-[schranz/symfony-php-website-skeleton](https://github.com/alexander-schranz/symfony-php-skeleton):
+[schranz/symfony-php-website-skeleton](https://github.com/alexander-schranz/symfony-php-website-skeleton):
 
 ```bash
 composer create-project schranz/symfony-php-website-skeleton
