@@ -905,12 +905,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/alexander-schranz/symfony-recipes-yaml-to-php-converter.git",
-                "reference": "0d93b5040e9f5af710a5b7f2c5a3bd58c5b0577d"
+                "reference": "eb4e343296f35be81444d2195f02e938ff08a12d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alexander-schranz/symfony-recipes-yaml-to-php-converter/zipball/0d93b5040e9f5af710a5b7f2c5a3bd58c5b0577d",
-                "reference": "0d93b5040e9f5af710a5b7f2c5a3bd58c5b0577d",
+                "url": "https://api.github.com/repos/alexander-schranz/symfony-recipes-yaml-to-php-converter/zipball/eb4e343296f35be81444d2195f02e938ff08a12d",
+                "reference": "eb4e343296f35be81444d2195f02e938ff08a12d",
                 "shasum": ""
             },
             "require": {
@@ -938,7 +938,7 @@
                 "issues": "https://github.com/alexander-schranz/symfony-recipes-yaml-to-php-converter/issues",
                 "source": "https://github.com/alexander-schranz/symfony-recipes-yaml-to-php-converter/tree/main"
             },
-            "time": "2022-08-13T22:20:16+00:00"
+            "time": "2022-08-13T23:50:45+00:00"
         },
         {
             "name": "sebastian/diff",
