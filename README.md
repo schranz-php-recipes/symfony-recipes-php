@@ -17,11 +17,19 @@ repository.
 
 There are currently also 2 skeletons shipped which can be used to create new symfony projects:
 
-```bash
-# symfony/skeleton:
-composer create-project schranz/symfony-php-skeleton
+**symfony/skeleton clone:**
 
-# symfony/website-skeleton:
+[schranz/symfony-php-skeleton](https://github.com/alexander-schranz/symfony-php-skeleton):
+
+```bash
+composer create-project schranz/symfony-php-skeleton
+```
+
+**symfony/website-skeleton clone:**
+
+[schranz/symfony-php-website-skeleton](https://github.com/alexander-schranz/symfony-php-skeleton):
+
+```bash
 composer create-project schranz/symfony-php-website-skeleton
 ```
 
