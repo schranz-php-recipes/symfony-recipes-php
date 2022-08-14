@@ -24,3 +24,22 @@ composer create-project schranz/symfony-php-skeleton
 # symfony/website-skeleton:
 composer create-project schranz/symfony-php-website-skeleton
 ```
+
+## Using in exist projects
+
+First convert your project with [symplify/config-transformer](https://github.com/symplify/config-transformer) from `.yaml` to `.php` configs
+after add the following to the `composer` `extra.symfony.endpoint` configuration: 
+
+```json
+    "extra": {
+        "symfony": {
+            "allow-contrib": false,
+            "require": "6.1.*",
+            "endpoint": [
+                "https://raw.githubusercontent.com/alexander-schranz/symfony-recipes-php/flex/main/index.json",
+                "https://raw.githubusercontent.com/alexander-schranz/symfony-recipes-php-contrib/flex/main/index.json",
+                "flex://defaults"
+            ]
+        }
+    }
+```
