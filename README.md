@@ -12,3 +12,15 @@ package and fixing a lot of issues which did make this project even possible.
 
 The converter can be found in the [alexander-schranz/symfony-recipes-yaml-to-php-converter](https://github.com/alexander-schranz/symfony-recipes-yaml-to-php-converter)
 repository.
+
+## Skeletons
+
+There are currently also 2 skeletons shipped which can be used to create new symfony projects:
+
+```bash
+# symfony/skeleton:
+composer create-project schranz/symfony-php-skeleton
+
+# symfony/website-skeleton:
+composer create-project schranz/symfony-php-website-skeleton
+```
