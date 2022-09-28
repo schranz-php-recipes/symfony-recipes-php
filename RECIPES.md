@@ -5,7 +5,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | Package | Latest Recipe | Aliases |
 | --- | --- | --- |
 | [api-platform/admin-pack](https://packagist.org/packages/api-platform/admin-pack) | [1.0](api-platform/admin-pack/1.0) | `api-admin`, `api-platform-admin`, `apiadmin`, `apiplatformadmin`, `react-admin`, `reactadmin` |
-| [api-platform/core](https://packagist.org/packages/api-platform/core) | [2.5](api-platform/core/2.5) |  |
+| [api-platform/core](https://packagist.org/packages/api-platform/core) | [3.0](api-platform/core/3.0) |  |
 | [blackfireio/blackfire-symfony-meta](https://packagist.org/packages/blackfireio/blackfire-symfony-meta) | [1.0](blackfireio/blackfire-symfony-meta/1.0) | `blackfire` |
 | [doctrine/annotations](https://packagist.org/packages/doctrine/annotations) | [1.10](doctrine/annotations/1.10) |  |
 | [doctrine/doctrine-bundle](https://packagist.org/packages/doctrine/doctrine-bundle) | [2.4](doctrine/doctrine-bundle/2.4) |  |
@@ -30,6 +30,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [symfony/allmysms-notifier](https://packagist.org/packages/symfony/allmysms-notifier) | [5.3](symfony/allmysms-notifier/5.3) | `allmysms-notifier`, `allmysmsnotifier` |
 | [symfony/amazon-mailer](https://packagist.org/packages/symfony/amazon-mailer) | [4.4](symfony/amazon-mailer/4.4) | `amazon-mailer`, `amazonmailer` |
 | [symfony/amazon-sns-notifier](https://packagist.org/packages/symfony/amazon-sns-notifier) | [5.4](symfony/amazon-sns-notifier/5.4) | `amazon-sns-notifier`, `amazonsnsnotifier` |
+| [symfony/chatwork-notifier](https://packagist.org/packages/symfony/chatwork-notifier) | [6.2](symfony/chatwork-notifier/6.2) | `chatwork-notifier`, `chatworknotifier` |
 | [symfony/clickatell-notifier](https://packagist.org/packages/symfony/clickatell-notifier) | [5.3](symfony/clickatell-notifier/5.3) | `clickatell-notifier`, `clickatellnotifier` |
 | [symfony/console](https://packagist.org/packages/symfony/console) | [5.3](symfony/console/5.3) | `cli`, `console` |
 | [symfony/crowdin-translation-provider](https://packagist.org/packages/symfony/crowdin-translation-provider) | [5.3](symfony/crowdin-translation-provider/5.3) | `crowdin-translation-provider`, `crowdintranslationprovider` |
