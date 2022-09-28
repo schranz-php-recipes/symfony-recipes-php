@@ -51,3 +51,13 @@ after add the following to the `composer` `extra.symfony.endpoint` configuration
         }
     }
 ```
+
+### Contributing
+
+Update recipes manually:
+
+```bash
+composer install
+
+vendor/bin/yaml-to-php git@github.com:symfony/recipes.git
+```
