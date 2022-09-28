@@ -9,6 +9,6 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         'migrations_paths' => [
             'DoctrineMigrations' => '%kernel.project_dir%/migrations',
         ],
-        'enable_profiler' => '%kernel.debug%',
+        'enable_profiler' => false,
     ]);
 };
