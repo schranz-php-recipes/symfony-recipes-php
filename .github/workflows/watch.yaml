@@ -25,9 +25,7 @@ jobs:
             - name: Install dependencies
               uses: ramsey/composer-install@v2
 
-            - uses: fregante/setup-git-token@v1
-              with:
-                  token: ${{ secrets.BOT_TOKEN }}
+            - run: echo "${{ secrets.BOT_TOKEN }}"
 
             - name: Regenerate code against last version
               run: vendor/bin/yaml-to-php git@github.com:symfony/recipes.git
