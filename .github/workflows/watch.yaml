@@ -25,10 +25,8 @@ jobs:
             - name: Install dependencies
               uses: ramsey/composer-install@v2
 
-            - run: echo "${{ secrets.BOT_TOKEN }}"
-
             - name: Regenerate code against last version
-              run: vendor/bin/yaml-to-php git@github.com:symfony/recipes.git
+              run: vendor/bin/yaml-to-php https://github.com/symfony/recipes.git
 
             - name: Create Pull Request
               uses: peter-evans/create-pull-request@v3
