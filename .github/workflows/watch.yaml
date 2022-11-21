@@ -1,0 +1,43 @@
+name: Watch for changes
+
+on:
+    pull_request:
+    schedule:
+        - cron: '0 6 * * *'
+
+jobs:
+    generated-code:
+        name: Assert Generated Code is uptodate with last version
+        runs-on: Ubuntu-20.04
+
+        steps:
+            - name: Set up PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                  php-version: 8.1
+                  coverage: none
+
+            - name: Checkout code
+              uses: actions/checkout@v2
+              with:
+                  ref: main
+
+            - name: Install dependencies
+              uses: ramsey/composer-install@v2
+
+            - name: Regenerate code against last version
+              run: vendor/bin/yaml-to-php git@github.com:symfony/recipes.git
+
+            - name: Create Pull Request
+              uses: peter-evans/create-pull-request@v3
+              with:
+                  token: ${{ secrets.BOT_TOKEN }}
+                  push-to-fork: symfony-php-recipes-bot/symfony-recipes-php
+                  author: SymfonyPHPRecipes Bot <alexander+symfony-php-recipes-bot@sulu.io>
+                  committer: SymfonyPHPRecipes Bot <alexander+symfony-php-recipes-bot@sulu.io>
+                  commit-message: update recipes code
+                  title: Update generated code $(date +'%Y-%m-%dT%H:%M:%S')
+                  body: |
+                      The Symfony Recipes changed with version ${{ steps.fetch_version.outputs.last }}.
+                      This PR contains the new definition for recipes.
+                  branch: bot-code-update
