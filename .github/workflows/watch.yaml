@@ -27,6 +27,8 @@ jobs:
 
             - name: Regenerate code against last version
               run: vendor/bin/yaml-to-php git@github.com:symfony/recipes.git
+              envs:
+                  GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
 
             - name: Create Pull Request
               uses: peter-evans/create-pull-request@v3
