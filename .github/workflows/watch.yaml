@@ -7,7 +7,7 @@ on:
 
 jobs:
     generated-code:
-        name: Assert Generated Code is uptodate with last version
+        name: Update recipes
         runs-on: Ubuntu-20.04
 
         steps:
@@ -27,7 +27,7 @@ jobs:
 
             - name: Regenerate code against last version
               run: vendor/bin/yaml-to-php git@github.com:symfony/recipes.git
-              envs:
+              env:
                   GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
 
             - name: Create Pull Request
