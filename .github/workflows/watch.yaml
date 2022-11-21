@@ -28,6 +28,9 @@ jobs:
             - name: Regenerate code against last version
               run: vendor/bin/yaml-to-php https://github.com/symfony/recipes.git
 
+            - name: Show changes
+              run: git status
+
             - name: Create Pull Request
               uses: peter-evans/create-pull-request@v3
               with:
