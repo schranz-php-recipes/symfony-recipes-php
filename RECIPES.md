@@ -16,6 +16,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [hautelook/alice-bundle](https://packagist.org/packages/hautelook/alice-bundle) | [2.2](hautelook/alice-bundle/2.2) | `alice` |
 | [javiereguiluz/easyadmin-bundle](https://packagist.org/packages/javiereguiluz/easyadmin-bundle) | [1.17](javiereguiluz/easyadmin-bundle/1.17) |  |
 | [league/flysystem-bundle](https://packagist.org/packages/league/flysystem-bundle) | [1.0](league/flysystem-bundle/1.0) |  |
+| [league/oauth2-server-bundle](https://packagist.org/packages/league/oauth2-server-bundle) | [0.4](league/oauth2-server-bundle/0.4) | `oauth-server`, `oauth2-server`, `oauth2server`, `oauthserver` |
 | [lexik/jwt-authentication-bundle](https://packagist.org/packages/lexik/jwt-authentication-bundle) | [2.5](lexik/jwt-authentication-bundle/2.5) | `jwt`, `jwt-auth`, `jwtauth` |
 | [nelmio/alice](https://packagist.org/packages/nelmio/alice) | [3.3](nelmio/alice/3.3) |  |
 | [nelmio/cors-bundle](https://packagist.org/packages/nelmio/cors-bundle) | [1.5](nelmio/cors-bundle/1.5) | `cors` |
@@ -88,7 +89,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [symfony/psr7-pack](https://packagist.org/packages/symfony/psr7-pack) | [1.0](symfony/psr7-pack/1.0) | `psr-7`, `psr-17`, `psr7`, `psr17` |
 | [symfony/requirements-checker](https://packagist.org/packages/symfony/requirements-checker) | [2.0](symfony/requirements-checker/2.0) | `req-check`, `req-checker`, `req-checks`, `reqcheck`, `reqchecker`, `reqchecks`, `requirement-check`, `requirement-checker`, `requirementcheck`, `requirementchecker`, `requirements-checker`, `requirementschecker` |
 | [symfony/rocket-chat-notifier](https://packagist.org/packages/symfony/rocket-chat-notifier) | [5.1](symfony/rocket-chat-notifier/5.1) | `rocket-chat-notifier`, `rocketchatnotifier` |
-| [symfony/routing](https://packagist.org/packages/symfony/routing) | [6.1](symfony/routing/6.1) | `router`, `routing` |
+| [symfony/routing](https://packagist.org/packages/symfony/routing) | [6.2](symfony/routing/6.2) | `router`, `routing` |
 | [symfony/security-bundle](https://packagist.org/packages/symfony/security-bundle) | [6.0](symfony/security-bundle/6.0) | `security`, `security-bundle`, `securitybundle` |
 | [symfony/sendberry-notifier](https://packagist.org/packages/symfony/sendberry-notifier) | [6.1](symfony/sendberry-notifier/6.1) | `sendberry-notifier`, `sendberrynotifier` |
 | [symfony/sendgrid-mailer](https://packagist.org/packages/symfony/sendgrid-mailer) | [4.4](symfony/sendgrid-mailer/4.4) | `sendgrid-mailer`, `sendgridmailer` |
@@ -109,6 +110,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [symfony/turbo-sms-notifier](https://packagist.org/packages/symfony/turbo-sms-notifier) | [5.4](symfony/turbo-sms-notifier/5.4) | `turbo-sms-notifier`, `turbosmsnotifier` |
 | [symfony/twig-bundle](https://packagist.org/packages/symfony/twig-bundle) | [5.4](symfony/twig-bundle/5.4) | `twig-bundle`, `twigbundle` |
 | [symfony/twilio-notifier](https://packagist.org/packages/symfony/twilio-notifier) | [5.0](symfony/twilio-notifier/5.0) | `twilio-notifier`, `twilionotifier` |
+| [symfony/uid](https://packagist.org/packages/symfony/uid) | [6.2](symfony/uid/6.2) | `uid` |
 | [symfony/ux-autocomplete](https://packagist.org/packages/symfony/ux-autocomplete) | [2.2](symfony/ux-autocomplete/2.2) | `ux-autocomplete`, `uxautocomplete` |
 | [symfony/ux-live-component](https://packagist.org/packages/symfony/ux-live-component) | [2.0](symfony/ux-live-component/2.0) | `ux-live-component`, `uxlivecomponent` |
 | [symfony/validator](https://packagist.org/packages/symfony/validator) | [5.3](symfony/validator/5.3) | `validation`, `validator` |

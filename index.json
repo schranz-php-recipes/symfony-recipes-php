@@ -197,6 +197,10 @@
         "nexmo-notifier": "symfony/nexmo-notifier",
         "nexmonotifier": "symfony/nexmo-notifier",
         "notifier": "symfony/notifier",
+        "oauth-server": "league/oauth2-server-bundle",
+        "oauth2-server": "league/oauth2-server-bundle",
+        "oauth2server": "league/oauth2-server-bundle",
+        "oauthserver": "league/oauth2-server-bundle",
         "octopush-notifier": "symfony/octopush-notifier",
         "octopushnotifier": "symfony/octopush-notifier",
         "oh-my-smtp-mailer": "symfony/oh-my-smtp-mailer",
@@ -433,6 +437,9 @@
         ],
         "league/flysystem-bundle": [
             "1.0"
+        ],
+        "league/oauth2-server-bundle": [
+            "0.4"
         ],
         "lexik/jwt-authentication-bundle": [
             "2.3",
@@ -695,7 +702,8 @@
             "5.1",
             "5.3",
             "6.0",
-            "6.1"
+            "6.1",
+            "6.2"
         ],
         "symfony/security-bundle": [
             "3.3",
@@ -768,6 +776,9 @@
         ],
         "symfony/twilio-notifier": [
             "5.0"
+        ],
+        "symfony/uid": [
+            "6.2"
         ],
         "symfony/ux-autocomplete": [
             "2.2"
@@ -892,6 +903,9 @@
             },
             "6.1": {
                 "symfony/framework-bundle": "<5.3"
+            },
+            "6.2": {
+                "symfony/framework-bundle": "<6.2"
             }
         },
         "symfony/security-bundle": {
@@ -908,6 +922,11 @@
             },
             "5.4": {
                 "symfony/framework-bundle": "<5.3"
+            }
+        },
+        "symfony/uid": {
+            "6.2": {
+                "symfony/framework-bundle": "<6.2"
             }
         },
         "symfony/validator": {
@@ -2392,11 +2411,11 @@
     "branch": "main",
     "is_contrib": false,
     "_links": {
-        "repository": "github.com/alexander-schranz/symfony-recipes-php",
-        "origin_template": "{package}:{version}@github.com/alexander-schranz/symfony-recipes-php:main",
-        "recipe_template": "https://raw.githubusercontent.com/alexander-schranz/symfony-recipes-php/flex/main/{package_dotted}.{version}.json",
+        "repository": "github.com/symfony-php-recipes/symfony-recipes-php",
+        "origin_template": "{package}:{version}@github.com/symfony-php-recipes/symfony-recipes-php:main",
+        "recipe_template": "https://raw.githubusercontent.com/symfony-php-recipes/symfony-recipes-php/flex/main/{package_dotted}.{version}.json",
         "recipe_template_relative": "{package_dotted}.{version}.json",
-        "archived_recipes_template": "https://raw.githubusercontent.com/alexander-schranz/symfony-recipes-php/flex/main/archived/{package_dotted}/{ref}.json",
+        "archived_recipes_template": "https://raw.githubusercontent.com/symfony-php-recipes/symfony-recipes-php/flex/main/archived/{package_dotted}/{ref}.json",
         "archived_recipes_template_relative": "archived/{package_dotted}/{ref}.json"
     }
 }

@@ -1,18 +1,16 @@
 {
     "manifests": {
-        "symfony/lock": {
+        "symfony/uid": {
             "manifest": {
                 "copy-from-recipe": {
                     "config/": "%CONFIG_DIR%/"
                 },
-                "env": {
-                    "#1": "Choose one of the stores below",
-                    "#2": "LOCK_DSN=redis://localhost",
-                    "LOCK_DSN": "flock"
+                "conflict": {
+                    "symfony/framework-bundle": "<6.2"
                 }
             },
             "files": {
-                "config/packages/lock.php": {
+                "config/packages/uid.php": {
                     "contents": [
                         "<?php",
                         "",
@@ -22,7 +20,10 @@
                         "",
                         "return static function (ContainerConfigurator $containerConfigurator): void {",
                         "    $containerConfigurator->extension('framework', [",
-                        "        'lock' => '%env(LOCK_DSN)%',",
+                        "        'uid' => [",
+                        "            'default_uuid_version' => 7,",
+                        "            'time_based_uuid_version' => 7,",
+                        "        ],",
                         "    ]);",
                         "};",
                         ""
@@ -30,7 +31,7 @@
                     "executable": false
                 }
             },
-            "ref": "85a28b7873a86b9636fa692e20e24d818c889cf9"
+            "ref": "3a539fccfafb8b4bc5d0be04f008b77bade77f91"
         }
     }
 }

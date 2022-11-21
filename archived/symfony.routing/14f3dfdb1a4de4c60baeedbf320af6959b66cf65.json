@@ -1,0 +1,61 @@
+{
+    "manifests": {
+        "symfony/routing": {
+            "manifest": {
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                },
+                "conflict": {
+                    "symfony/framework-bundle": "<6.2"
+                }
+            },
+            "files": {
+                "config/packages/routing.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->extension('framework', [",
+                        "        'router' => [",
+                        "            'utf8' => true,",
+                        "        ],",
+                        "    ]);",
+                        "    if ($containerConfigurator->env() === 'prod') {",
+                        "        $containerConfigurator->extension('framework', [",
+                        "            'router' => [",
+                        "                'strict_requirements' => null,",
+                        "            ],",
+                        "        ]);",
+                        "    }",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\Routing\\Loader\\Configurator\\RoutingConfigurator;",
+                        "",
+                        "return static function (RoutingConfigurator $routingConfigurator): void {",
+                        "    $routingConfigurator->import([",
+                        "        'path' => '../src/Controller/',",
+                        "        'namespace' => 'App\\Controller',",
+                        "    ], 'attribute');",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "14f3dfdb1a4de4c60baeedbf320af6959b66cf65"
+        }
+    }
+}
