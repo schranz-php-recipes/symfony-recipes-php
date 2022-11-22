@@ -35,7 +35,7 @@ jobs:
               uses: peter-evans/create-pull-request@v4
               with:
                   token: ${{ secrets.BOT_TOKEN }}
-                  commit-message: update recipes code $(date +'%Y-%m-%dT%H:%M:%S')
+                  commit-message: Update recipes code $(date +'%Y-%m-%dT%H:%M:%S')
                   title: Update generated code $(date +'%Y-%m-%dT%H:%M:%S')
                   body: |
                       The Symfony Recipes changed with version ${{ steps.fetch_version.outputs.last }}.
