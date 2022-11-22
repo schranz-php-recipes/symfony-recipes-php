@@ -6,7 +6,7 @@ on:
 
 jobs:
     call-watch:
-        uses: symfony-php-recipes/symfony-recipes-php/.github/workflows/callable-watch.yml@main
+        uses: schranz-php-recipes/symfony-recipes-php/.github/workflows/callable-watch.yml@main
         with:
             original_repository: https://github.com/symfony/recipes.git
         secrets:
