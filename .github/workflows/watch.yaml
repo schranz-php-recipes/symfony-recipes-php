@@ -35,10 +35,7 @@ jobs:
               uses: peter-evans/create-pull-request@v4
               with:
                   token: ${{ secrets.BOT_TOKEN }}
-                  push-to-fork: symfony-php-recipes-bot/symfony-recipes-php
-                  author: SymfonyPHPRecipes Bot <alexander+symfony-php-recipes-bot@sulu.io>
-                  committer: SymfonyPHPRecipes Bot <alexander+symfony-php-recipes-bot@sulu.io>
-                  commit-message: update recipes code
+                  commit-message: update recipes code $(date +'%Y-%m-%dT%H:%M:%S')
                   title: Update generated code $(date +'%Y-%m-%dT%H:%M:%S')
                   body: |
                       The Symfony Recipes changed with version ${{ steps.fetch_version.outputs.last }}.
