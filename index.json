@@ -2411,11 +2411,11 @@
     "branch": "main",
     "is_contrib": false,
     "_links": {
-        "repository": "github.com/symfony-php-recipes/symfony-recipes-php",
-        "origin_template": "{package}:{version}@github.com/symfony-php-recipes/symfony-recipes-php:main",
-        "recipe_template": "https://raw.githubusercontent.com/symfony-php-recipes/symfony-recipes-php/flex/main/{package_dotted}.{version}.json",
+        "repository": "github.com/schranz-php-recipes/symfony-recipes-php",
+        "origin_template": "{package}:{version}@github.com/schranz-php-recipes/symfony-recipes-php:main",
+        "recipe_template": "https://raw.githubusercontent.com/schranz-php-recipes/symfony-recipes-php/flex/main/{package_dotted}.{version}.json",
         "recipe_template_relative": "{package_dotted}.{version}.json",
-        "archived_recipes_template": "https://raw.githubusercontent.com/symfony-php-recipes/symfony-recipes-php/flex/main/archived/{package_dotted}/{ref}.json",
+        "archived_recipes_template": "https://raw.githubusercontent.com/schranz-php-recipes/symfony-recipes-php/flex/main/archived/{package_dotted}/{ref}.json",
         "archived_recipes_template_relative": "archived/{package_dotted}/{ref}.json"
     }
 }
