@@ -1,7 +1,6 @@
 name: Watch for changes
 
 on:
-    pull_request:
     schedule:
         - cron: '0 6 * * *'
 
