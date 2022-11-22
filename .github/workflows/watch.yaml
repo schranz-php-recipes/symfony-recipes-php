@@ -29,7 +29,7 @@ jobs:
               run: vendor/bin/yaml-to-php https://github.com/symfony/recipes.git
 
             - name: Checkout .github directory
-              run: git checkout .github/
+              run: rm -rf .github && git checkout .github
 
             - name: Show changes
               run: git status
