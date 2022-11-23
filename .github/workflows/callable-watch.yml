@@ -47,8 +47,10 @@ jobs:
               uses: peter-evans/create-pull-request@v4
               with:
                   token: ${{ secrets.BOT_TOKEN }}
-                  commit-message: Update recipes code ${{ steps.date.outputs.date }}
-                  title: Update generated code ${{ steps.date.outputs.date }}
+                  author: Schranz PHP Recipes Bot <alexander+symfony-php-recipes-bot@sulu.io>
+                  committer: Schranz PHP Recipes Bot <alexander+symfony-php-recipes-bot@sulu.io>
+                  commit-message: Update recipes: ${{ steps.date.outputs.date }}
+                  title: Update recipes: ${{ steps.date.outputs.date }}
                   body: |
                       The Symfony Recipes changed with version ${{ steps.fetch_version.outputs.last }}.
                       This PR contains the new definition for recipes.
