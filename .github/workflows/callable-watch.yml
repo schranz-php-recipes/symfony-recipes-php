@@ -31,7 +31,7 @@ jobs:
               uses: ramsey/composer-install@v2
 
             - name: Regenerate code against last version
-              run: vendor/bin/yaml-to-php ${{ inputs.original_repository }})
+              run: vendor/bin/yaml-to-php ${{ inputs.original_repository }}
 
             - name: Checkout .github directory
               run: rm -rf .github && git checkout .github
