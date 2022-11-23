@@ -6,6 +6,9 @@ on:
             original_repository:
                 required: true
                 type: string
+            push_repository:
+                required: true
+                type: string
         secrets:
             token:
                 required: true
@@ -47,6 +50,7 @@ jobs:
               uses: peter-evans/create-pull-request@v4
               with:
                   token: ${{ secrets.BOT_TOKEN }}
+                  push-to-fork: ${{ inputs.push_repository }}
                   author: Schranz PHP Recipes Bot <alexander+symfony-php-recipes-bot@sulu.io>
                   committer: Schranz PHP Recipes Bot <alexander+symfony-php-recipes-bot@sulu.io>
                   commit-message: Update recipes ${{ steps.date.outputs.date }}

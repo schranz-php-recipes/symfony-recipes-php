@@ -10,5 +10,6 @@ jobs:
         uses: schranz-php-recipes/symfony-recipes-php/.github/workflows/callable-watch.yml@main
         with:
             original_repository: https://github.com/symfony/recipes.git
+            push_repository: symfony-php-recipes-bot/symfony-recipes-php
         secrets:
             token: ${{ secrets.BOT_TOKEN }}
