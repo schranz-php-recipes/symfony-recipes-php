@@ -1,0 +1,35 @@
+{
+    "manifests": {
+        "symfony/ux-live-component": {
+            "manifest": {
+                "bundles": {
+                    "Symfony\\UX\\LiveComponent\\LiveComponentBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ux_live_component.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\Routing\\Loader\\Configurator\\RoutingConfigurator;",
+                        "",
+                        "return static function (RoutingConfigurator $routingConfigurator): void {",
+                        "    $routingConfigurator->import('@LiveComponentBundle/config/routes.php')",
+                        "        ->prefix('/_components');",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "d5f82e4a287b932518aef1862fb20dff38a13fe3"
+        }
+    }
+}

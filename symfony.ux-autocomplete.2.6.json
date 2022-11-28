@@ -1,0 +1,35 @@
+{
+    "manifests": {
+        "symfony/ux-autocomplete": {
+            "manifest": {
+                "bundles": {
+                    "Symfony\\UX\\Autocomplete\\AutocompleteBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ux_autocomplete.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\Routing\\Loader\\Configurator\\RoutingConfigurator;",
+                        "",
+                        "return static function (RoutingConfigurator $routingConfigurator): void {",
+                        "    $routingConfigurator->import('@AutocompleteBundle/config/routes.php')",
+                        "        ->prefix('/autocomplete');",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "3b03893dff9fca18b7dabacabb09c0da05489820"
+        }
+    }
+}
