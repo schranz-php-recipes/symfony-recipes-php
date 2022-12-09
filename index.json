@@ -31,6 +31,8 @@
         "apiplatform": "api-platform/api-pack",
         "apiplatformadmin": "api-platform/admin-pack",
         "asset": "symfony/asset",
+        "bandwidth-notifier": "symfony/bandwidth-notifier",
+        "bandwidthnotifier": "symfony/bandwidth-notifier",
         "beanstalkd-messenger": "symfony/beanstalkd-messenger",
         "beanstalkdmessenger": "symfony/beanstalkd-messenger",
         "blackfire": "blackfireio/blackfire-symfony-meta",
@@ -132,6 +134,8 @@
         "intl": "symfony/intl",
         "iqsms-notifier": "symfony/iqsms-notifier",
         "iqsmsnotifier": "symfony/iqsms-notifier",
+        "isendpro-notifier": "symfony/isendpro-notifier",
+        "isendpronotifier": "symfony/isendpro-notifier",
         "js-translation": "willdurand/js-translation-bundle",
         "js-translator": "willdurand/js-translation-bundle",
         "jstranslation": "willdurand/js-translation-bundle",
@@ -144,6 +148,8 @@
         "ldap": "symfony/ldap",
         "light-sms-notifier": "symfony/light-sms-notifier",
         "lightsmsnotifier": "symfony/light-sms-notifier",
+        "line-notify-notifier": "symfony/line-notify-notifier",
+        "linenotifynotifier": "symfony/line-notify-notifier",
         "linked-in-notifier": "symfony/linked-in-notifier",
         "linkedinnotifier": "symfony/linked-in-notifier",
         "lock": "symfony/lock",
@@ -171,6 +177,8 @@
         "maker": "symfony/maker-bundle",
         "maker-bundle": "symfony/maker-bundle",
         "makerbundle": "symfony/maker-bundle",
+        "mastodon-notifier": "symfony/mastodon-notifier",
+        "mastodonnotifier": "symfony/mastodon-notifier",
         "mattermost-notifier": "symfony/mattermost-notifier",
         "mattermostnotifier": "symfony/mattermost-notifier",
         "mercure": "symfony/mercure-bundle",
@@ -225,6 +233,8 @@
         "phpunit-bridge": "symfony/phpunit-bridge",
         "phpunitbridge": "symfony/phpunit-bridge",
         "platformsh": "symfonycorp/platformsh-pack",
+        "plivo-notifier": "symfony/plivo-notifier",
+        "plivonotifier": "symfony/plivo-notifier",
         "postmark-mailer": "symfony/postmark-mailer",
         "postmarkmailer": "symfony/postmark-mailer",
         "process": "symfony/process",
@@ -257,6 +267,8 @@
         "requirementchecker": "symfony/requirements-checker",
         "requirements-checker": "symfony/requirements-checker",
         "requirementschecker": "symfony/requirements-checker",
+        "ring-central-notifier": "symfony/ring-central-notifier",
+        "ringcentralnotifier": "symfony/ring-central-notifier",
         "rocket-chat-notifier": "symfony/rocket-chat-notifier",
         "rocketchatnotifier": "symfony/rocket-chat-notifier",
         "router": "symfony/routing",
@@ -325,6 +337,8 @@
         "template": "symfony/twig-pack",
         "templates": "symfony/twig-pack",
         "templating": "symfony/templating",
+        "termii-notifier": "symfony/termii-notifier",
+        "termiinotifier": "symfony/termii-notifier",
         "test": "symfony/test-pack",
         "tests": "symfony/test-pack",
         "translation": "symfony/translation",
@@ -345,6 +359,8 @@
         "twigexts": "twig/extensions",
         "twilio-notifier": "symfony/twilio-notifier",
         "twilionotifier": "symfony/twilio-notifier",
+        "twitter-notifier": "symfony/twitter-notifier",
+        "twitternotifier": "symfony/twitter-notifier",
         "uid": "symfony/uid",
         "ux": "symfony/webpack-encore-bundle",
         "ux-autocomplete": "symfony/ux-autocomplete",
@@ -489,6 +505,9 @@
         "symfony/amazon-sns-notifier": [
             "5.4"
         ],
+        "symfony/bandwidth-notifier": [
+            "6.3"
+        ],
         "symfony/chatwork-notifier": [
             "6.2"
         ],
@@ -577,11 +596,17 @@
         "symfony/iqsms-notifier": [
             "5.3"
         ],
+        "symfony/isendpro-notifier": [
+            "6.3"
+        ],
         "symfony/kaz-info-teh-notifier": [
             "6.1"
         ],
         "symfony/light-sms-notifier": [
             "5.3"
+        ],
+        "symfony/line-notify-notifier": [
+            "6.3"
         ],
         "symfony/linked-in-notifier": [
             "5.2"
@@ -618,6 +643,9 @@
         ],
         "symfony/maker-bundle": [
             "1.0"
+        ],
+        "symfony/mastodon-notifier": [
+            "6.3"
         ],
         "symfony/mattermost-notifier": [
             "5.1"
@@ -681,6 +709,9 @@
             "5.1",
             "5.3"
         ],
+        "symfony/plivo-notifier": [
+            "6.3"
+        ],
         "symfony/postmark-mailer": [
             "4.3",
             "4.4"
@@ -691,6 +722,9 @@
         "symfony/requirements-checker": [
             "1.0",
             "2.0"
+        ],
+        "symfony/ring-central-notifier": [
+            "6.3"
         ],
         "symfony/rocket-chat-notifier": [
             "5.1"
@@ -760,6 +794,9 @@
         "symfony/telnyx-notifier": [
             "5.4"
         ],
+        "symfony/termii-notifier": [
+            "6.3"
+        ],
         "symfony/translation": [
             "3.3",
             "5.3"
@@ -776,6 +813,9 @@
         ],
         "symfony/twilio-notifier": [
             "5.0"
+        ],
+        "symfony/twitter-notifier": [
+            "6.3"
         ],
         "symfony/uid": [
             "6.2"
