@@ -270,7 +270,7 @@ jobs:
                 run: |
                     set -x
                     php -v
-                    composer create-project --ansi "${{ inputs.skeleton_74 }}:${{ inputs.skeleton_74_version }}" skeleton_74
+                    composer create-project --ansi "${{ inputs.skeleton_74 }}:${{ inputs.skeleton_74_version }}" --stability dev skeleton_74
                     cd skeleton_74
                     composer config extra.symfony.allow-contrib ${{ inputs.contrib && 'true' || 'false' }}
                     composer config minimum-stability dev
@@ -298,7 +298,7 @@ jobs:
                 run: |
                     set -x
                     php -v
-                    composer create-project --ansi "${{ inputs.skeleton_81 }}:${{ inputs.skeleton_81_version }}":"@dev" skeleton_81
+                    composer create-project --ansi "${{ inputs.skeleton_81 }}:${{ inputs.skeleton_81_version }}" --stability dev skeleton_81
                     cd skeleton_81
                     composer config extra.symfony.allow-contrib ${{ inputs.contrib && 'true' || 'false' }}
                     composer config minimum-stability dev
