@@ -34,6 +34,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         $containerConfigurator->extension('doctrine', [
             'orm' => [
                 'auto_generate_proxy_classes' => false,
+                'proxy_dir' => '%kernel.build_dir%/doctrine/orm/Proxies',
                 'query_cache_driver' => [
                     'type' => 'pool',
                     'pool' => 'doctrine.system_cache_pool',
