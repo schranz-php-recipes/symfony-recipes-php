@@ -226,6 +226,8 @@
         "ormfixtures": "doctrine/doctrine-fixtures-bundle",
         "ovh-cloud-notifier": "symfony/ovh-cloud-notifier",
         "ovhcloudnotifier": "symfony/ovh-cloud-notifier",
+        "pager-duty-notifier": "symfony/pager-duty-notifier",
+        "pagerdutynotifier": "symfony/pager-duty-notifier",
         "panther": "symfony/panther",
         "password-hasher": "symfony/password-hasher",
         "passwordhasher": "symfony/password-hasher",
@@ -706,6 +708,9 @@
         ],
         "symfony/ovh-cloud-notifier": [
             "5.1"
+        ],
+        "symfony/pager-duty-notifier": [
+            "6.3"
         ],
         "symfony/panther": [
             "1.0"
