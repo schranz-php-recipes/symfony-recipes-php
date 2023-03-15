@@ -387,6 +387,7 @@
         "web-server": "symfony/web-server-bundle",
         "web-server-bundle": "symfony/web-server-bundle",
         "webapp": "symfony/webapp-pack",
+        "webhook": "symfony/webhook",
         "weblink": "symfony/web-link",
         "webpack": "symfony/webpack-encore-bundle",
         "webpack-encore": "symfony/webpack-encore-bundle",
@@ -859,6 +860,9 @@
         ],
         "symfony/webapp-pack": [
             "1.0"
+        ],
+        "symfony/webhook": [
+            "6.3"
         ],
         "symfony/webpack-encore-bundle": [
             "1.0",

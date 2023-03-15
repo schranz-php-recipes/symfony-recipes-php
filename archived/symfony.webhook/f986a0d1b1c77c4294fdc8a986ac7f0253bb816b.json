@@ -1,0 +1,30 @@
+{
+    "manifests": {
+        "symfony/webhook": {
+            "manifest": {
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/webhook.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\Routing\\Loader\\Configurator\\RoutingConfigurator;",
+                        "",
+                        "return static function (RoutingConfigurator $routingConfigurator): void {",
+                        "    $routingConfigurator->import('@FrameworkBundle/Resources/config/routing/webhook.xml')",
+                        "        ->prefix('/webhook');",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "f986a0d1b1c77c4294fdc8a986ac7f0253bb816b"
+        }
+    }
+}
