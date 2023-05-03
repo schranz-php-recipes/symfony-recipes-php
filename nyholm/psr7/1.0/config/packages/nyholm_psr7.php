@@ -19,17 +19,5 @@ return static function (ContainerConfigurator $containerConfigurator): void {
 
     $services->alias('Psr\Http\Message\UriFactoryInterface', 'nyholm.psr7.psr17_factory');
 
-    $services->alias('Http\Message\MessageFactory', 'nyholm.psr7.httplug_factory');
-
-    $services->alias('Http\Message\RequestFactory', 'nyholm.psr7.httplug_factory');
-
-    $services->alias('Http\Message\ResponseFactory', 'nyholm.psr7.httplug_factory');
-
-    $services->alias('Http\Message\StreamFactory', 'nyholm.psr7.httplug_factory');
-
-    $services->alias('Http\Message\UriFactory', 'nyholm.psr7.httplug_factory');
-
     $services->set('nyholm.psr7.psr17_factory', 'Nyholm\Psr7\Factory\Psr17Factory');
-
-    $services->set('nyholm.psr7.httplug_factory', 'Nyholm\Psr7\Factory\HttplugFactory');
 };
