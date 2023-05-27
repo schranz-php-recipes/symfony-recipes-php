@@ -1,0 +1,67 @@
+{
+    "manifests": {
+        "symfony/twig-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Symfony\\Bundle\\TwigBundle\\TwigBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/",
+                    "templates/": "templates/"
+                },
+                "conflict": {
+                    "symfony/framework-bundle": "<5.3"
+                }
+            },
+            "files": {
+                "config/packages/twig.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->extension('twig', [",
+                        "        'default_path' => '%kernel.project_dir%/templates',",
+                        "    ]);",
+                        "    if ($containerConfigurator->env() === 'test') {",
+                        "        $containerConfigurator->extension('twig', [",
+                        "            'strict_variables' => true,",
+                        "        ]);",
+                        "    }",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "templates/base.html.twig": {
+                    "contents": [
+                        "<!DOCTYPE html>",
+                        "<html>",
+                        "    <head>",
+                        "        <meta charset=\"UTF-8\">",
+                        "        <title>{% block title %}Welcome!{% endblock %}</title>",
+                        "        <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>\u26ab\ufe0f</text></svg>\">",
+                        "        {% block stylesheets %}",
+                        "        {% endblock %}",
+                        "",
+                        "        {% block javascripts %}",
+                        "        {% endblock %}",
+                        "    </head>",
+                        "    <body>",
+                        "        {% block body %}{% endblock %}",
+                        "    </body>",
+                        "</html>",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "f471205f0b89258437f50fa3a7b63eefa551df62"
+        }
+    }
+}
