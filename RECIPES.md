@@ -36,6 +36,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [symfony/asset-mapper](https://packagist.org/packages/symfony/asset-mapper) | [6.3](symfony/asset-mapper/6.3) | `asset-mapper`, `assetmapper`, `importmap` |
 | [symfony/bandwidth-notifier](https://packagist.org/packages/symfony/bandwidth-notifier) | [6.3](symfony/bandwidth-notifier/6.3) | `bandwidth-notifier`, `bandwidthnotifier` |
 | [symfony/chatwork-notifier](https://packagist.org/packages/symfony/chatwork-notifier) | [6.2](symfony/chatwork-notifier/6.2) | `chatwork-notifier`, `chatworknotifier` |
+| [symfony/click-send-notifier](https://packagist.org/packages/symfony/click-send-notifier) | [6.3](symfony/click-send-notifier/6.3) | `click-send-notifier`, `clicksendnotifier` |
 | [symfony/clickatell-notifier](https://packagist.org/packages/symfony/clickatell-notifier) | [5.3](symfony/clickatell-notifier/5.3) | `clickatell-notifier`, `clickatellnotifier` |
 | [symfony/console](https://packagist.org/packages/symfony/console) | [5.3](symfony/console/5.3) | `cli`, `console` |
 | [symfony/crowdin-translation-provider](https://packagist.org/packages/symfony/crowdin-translation-provider) | [5.3](symfony/crowdin-translation-provider/5.3) | `crowdin-translation-provider`, `crowdintranslationprovider` |
@@ -96,6 +97,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [symfony/plivo-notifier](https://packagist.org/packages/symfony/plivo-notifier) | [6.3](symfony/plivo-notifier/6.3) | `plivo-notifier`, `plivonotifier` |
 | [symfony/postmark-mailer](https://packagist.org/packages/symfony/postmark-mailer) | [4.4](symfony/postmark-mailer/4.4) | `postmark-mailer`, `postmarkmailer` |
 | [symfony/psr7-pack](https://packagist.org/packages/symfony/psr7-pack) | [1.0](symfony/psr7-pack/1.0) | `psr-7`, `psr-17`, `psr7`, `psr17` |
+| [symfony/pushover-notifier](https://packagist.org/packages/symfony/pushover-notifier) | [6.3](symfony/pushover-notifier/6.3) | `pushover-notifier`, `pushovernotifier` |
 | [symfony/requirements-checker](https://packagist.org/packages/symfony/requirements-checker) | [2.0](symfony/requirements-checker/2.0) | `req-check`, `req-checker`, `req-checks`, `reqcheck`, `reqchecker`, `reqchecks`, `requirement-check`, `requirement-checker`, `requirementcheck`, `requirementchecker`, `requirements-checker`, `requirementschecker` |
 | [symfony/ring-central-notifier](https://packagist.org/packages/symfony/ring-central-notifier) | [6.3](symfony/ring-central-notifier/6.3) | `ring-central-notifier`, `ringcentralnotifier` |
 | [symfony/rocket-chat-notifier](https://packagist.org/packages/symfony/rocket-chat-notifier) | [5.1](symfony/rocket-chat-notifier/5.1) | `rocket-chat-notifier`, `rocketchatnotifier` |
@@ -113,6 +115,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [symfony/sms77-notifier](https://packagist.org/packages/symfony/sms77-notifier) | [5.4](symfony/sms77-notifier/5.4) | `sms77-notifier`, `sms77notifier` |
 | [symfony/smsapi-notifier](https://packagist.org/packages/symfony/smsapi-notifier) | [5.2](symfony/smsapi-notifier/5.2) | `smsapi-notifier`, `smsapinotifier` |
 | [symfony/smsc-notifier](https://packagist.org/packages/symfony/smsc-notifier) | [5.4](symfony/smsc-notifier/5.4) | `smsc-notifier`, `smscnotifier` |
+| [symfony/smsmode-notifier](https://packagist.org/packages/symfony/smsmode-notifier) | [6.3](symfony/smsmode-notifier/6.3) | `smsmode-notifier`, `smsmodenotifier` |
 | [symfony/spot-hit-notifier](https://packagist.org/packages/symfony/spot-hit-notifier) | [5.3](symfony/spot-hit-notifier/5.3) | `spot-hit-notifier`, `spothitnotifier` |
 | [symfony/stimulus-bundle](https://packagist.org/packages/symfony/stimulus-bundle) | [2.9](symfony/stimulus-bundle/2.9) | `stimulus`, `stimulus-bundle`, `stimulusbundle` |
 | [symfony/swiftmailer-bundle](https://packagist.org/packages/symfony/swiftmailer-bundle) | [2.5](symfony/swiftmailer-bundle/2.5) | `swiftmailer`, `swiftmailer-bundle`, `swiftmailerbundle` |

@@ -46,8 +46,10 @@
         "class-loader": "symfony/class-loader",
         "classloader": "symfony/class-loader",
         "cli": "symfony/console",
+        "click-send-notifier": "symfony/click-send-notifier",
         "clickatell-notifier": "symfony/clickatell-notifier",
         "clickatellnotifier": "symfony/clickatell-notifier",
+        "clicksendnotifier": "symfony/click-send-notifier",
         "clock": "symfony/clock",
         "config": "symfony/config",
         "console": "symfony/console",
@@ -260,6 +262,8 @@
         "psr-17": "symfony/psr7-pack",
         "psr7": "symfony/psr7-pack",
         "psr17": "symfony/psr7-pack",
+        "pushover-notifier": "symfony/pushover-notifier",
+        "pushovernotifier": "symfony/pushover-notifier",
         "rate-limiter": "symfony/rate-limiter",
         "ratelimiter": "symfony/rate-limiter",
         "react-admin": "api-platform/admin-pack",
@@ -336,6 +340,8 @@
         "smsc-notifier": "symfony/smsc-notifier",
         "smscnotifier": "symfony/smsc-notifier",
         "smsfactornotifier": "symfony/sms-factor-notifier",
+        "smsmode-notifier": "symfony/smsmode-notifier",
+        "smsmodenotifier": "symfony/smsmode-notifier",
         "spot-hit-notifier": "symfony/spot-hit-notifier",
         "spothitnotifier": "symfony/spot-hit-notifier",
         "stimulus": "symfony/stimulus-bundle",
@@ -539,6 +545,9 @@
         ],
         "symfony/chatwork-notifier": [
             "6.2"
+        ],
+        "symfony/click-send-notifier": [
+            "6.3"
         ],
         "symfony/clickatell-notifier": [
             "5.3"
@@ -751,6 +760,9 @@
         "symfony/psr7-pack": [
             "1.0"
         ],
+        "symfony/pushover-notifier": [
+            "6.3"
+        ],
         "symfony/requirements-checker": [
             "1.0",
             "2.0"
@@ -816,6 +828,9 @@
         ],
         "symfony/smsc-notifier": [
             "5.4"
+        ],
+        "symfony/smsmode-notifier": [
+            "6.3"
         ],
         "symfony/spot-hit-notifier": [
             "5.3"
