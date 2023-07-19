@@ -38,6 +38,10 @@
         "beanstalkd-messenger": "symfony/beanstalkd-messenger",
         "beanstalkdmessenger": "symfony/beanstalkd-messenger",
         "blackfire": "blackfireio/blackfire-symfony-meta",
+        "brevo-mailer": "symfony/brevo-mailer",
+        "brevo-notifier": "symfony/brevo-notifier",
+        "brevomailer": "symfony/brevo-mailer",
+        "brevonotifier": "symfony/brevo-notifier",
         "browser-kit": "symfony/browser-kit",
         "browserkit": "symfony/browser-kit",
         "cache": "symfony/cache",
@@ -173,6 +177,8 @@
         "mailchimp-mailer": "symfony/mailchimp-mailer",
         "mailchimpmailer": "symfony/mailchimp-mailer",
         "mailer": "symfony/mailer",
+        "mailer-send-mailer": "symfony/mailer-send-mailer",
+        "mailersendmailer": "symfony/mailer-send-mailer",
         "mailgun-mailer": "symfony/mailgun-mailer",
         "mailgunmailer": "symfony/mailgun-mailer",
         "mailjet-mailer": "symfony/mailjet-mailer",
@@ -214,6 +220,10 @@
         "nexmo-notifier": "symfony/nexmo-notifier",
         "nexmonotifier": "symfony/nexmo-notifier",
         "notifier": "symfony/notifier",
+        "novu-notifier": "symfony/novu-notifier",
+        "novunotifier": "symfony/novu-notifier",
+        "ntfy-notifier": "symfony/ntfy-notifier",
+        "ntfynotifier": "symfony/ntfy-notifier",
         "oauth-server": "league/oauth2-server-bundle",
         "oauth2-server": "league/oauth2-server-bundle",
         "oauth2server": "league/oauth2-server-bundle",
@@ -270,6 +280,8 @@
         "reactadmin": "api-platform/admin-pack",
         "redis-messenger": "symfony/redis-messenger",
         "redismessenger": "symfony/redis-messenger",
+        "redlink-notifier": "symfony/redlink-notifier",
+        "redlinknotifier": "symfony/redlink-notifier",
         "req-check": "symfony/requirements-checker",
         "req-checker": "symfony/requirements-checker",
         "req-checks": "symfony/requirements-checker",
@@ -387,10 +399,16 @@
         "ux": "symfony/webpack-encore-bundle",
         "ux-autocomplete": "symfony/ux-autocomplete",
         "ux-live-component": "symfony/ux-live-component",
+        "ux-react": "symfony/ux-react",
+        "ux-svelte": "symfony/ux-svelte",
         "ux-translator": "symfony/ux-translator",
+        "ux-vue": "symfony/ux-vue",
         "uxautocomplete": "symfony/ux-autocomplete",
         "uxlivecomponent": "symfony/ux-live-component",
+        "uxreact": "symfony/ux-react",
+        "uxsvelte": "symfony/ux-svelte",
         "uxtranslator": "symfony/ux-translator",
+        "uxvue": "symfony/ux-vue",
         "validation": "symfony/validator",
         "validator": "symfony/validator",
         "var-dumper": "symfony/var-dumper",
@@ -509,7 +527,8 @@
         ],
         "phpunit/phpunit": [
             "4.7",
-            "9.3"
+            "9.3",
+            "9.6"
         ],
         "scheb/2fa-bundle": [
             "5.0",
@@ -543,6 +562,12 @@
         ],
         "symfony/bandwidth-notifier": [
             "6.3"
+        ],
+        "symfony/brevo-mailer": [
+            "6.4"
+        ],
+        "symfony/brevo-notifier": [
+            "6.4"
         ],
         "symfony/chatwork-notifier": [
             "6.2"
@@ -670,6 +695,9 @@
         "symfony/mailer": [
             "4.3"
         ],
+        "symfony/mailer-send-mailer": [
+            "6.3"
+        ],
         "symfony/mailgun-mailer": [
             "4.3",
             "4.4"
@@ -726,6 +754,12 @@
         "symfony/notifier": [
             "5.0"
         ],
+        "symfony/novu-notifier": [
+            "6.4"
+        ],
+        "symfony/ntfy-notifier": [
+            "6.4"
+        ],
         "symfony/octopush-notifier": [
             "5.3"
         ],
@@ -749,7 +783,8 @@
             "4.1",
             "4.3",
             "5.1",
-            "5.3"
+            "5.3",
+            "6.3"
         ],
         "symfony/plivo-notifier": [
             "6.3"
@@ -763,6 +798,9 @@
         ],
         "symfony/pushover-notifier": [
             "6.3"
+        ],
+        "symfony/redlink-notifier": [
+            "6.4"
         ],
         "symfony/requirements-checker": [
             "1.0",
@@ -884,7 +922,19 @@
             "2.0",
             "2.6"
         ],
+        "symfony/ux-react": [
+            "2.8",
+            "2.9"
+        ],
+        "symfony/ux-svelte": [
+            "2.8",
+            "2.9"
+        ],
         "symfony/ux-translator": [
+            "2.8",
+            "2.9"
+        ],
+        "symfony/ux-vue": [
             "2.8",
             "2.9"
         ],
@@ -1025,6 +1075,11 @@
                 "symfony/framework-bundle": "<5.3"
             }
         },
+        "symfony/phpunit-bridge": {
+            "6.3": {
+                "phpunit/phpunit": "<9.6"
+            }
+        },
         "symfony/routing": {
             "5.3": {
                 "symfony/framework-bundle": "<5.3"
@@ -1069,9 +1124,27 @@
                 "symfony/framework-bundle": "<6.2"
             }
         },
+        "symfony/ux-react": {
+            "2.9": {
+                "symfony/flex": "<1.20.0 || >=2.0.0,<2.3.0",
+                "symfony/webpack-encore-bundle": "<2.0"
+            }
+        },
+        "symfony/ux-svelte": {
+            "2.9": {
+                "symfony/flex": "<1.20.0 || >=2.0.0,<2.3.0",
+                "symfony/webpack-encore-bundle": "<2.0"
+            }
+        },
         "symfony/ux-translator": {
             "2.9": {
                 "symfony/flex": "<1.20.0 || >=2.0.0,<2.3.0"
+            }
+        },
+        "symfony/ux-vue": {
+            "2.9": {
+                "symfony/flex": "<1.20.0 || >=2.0.0,<2.3.0",
+                "symfony/webpack-encore-bundle": "<2.0"
             }
         },
         "symfony/validator": {

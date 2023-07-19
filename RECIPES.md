@@ -24,7 +24,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [nyholm/psr7](https://packagist.org/packages/nyholm/psr7) | [1.0](nyholm/psr7/1.0) |  |
 | [php-cs-fixer/shim](https://packagist.org/packages/php-cs-fixer/shim) | [3.0](php-cs-fixer/shim/3.0) | `cs-fixer-shim`, `csfixershim`, `php-cs-fixer-shim`, `phpcsfixershim` |
 | [php-http/discovery](https://packagist.org/packages/php-http/discovery) | [1.18](php-http/discovery/1.18) |  |
-| [phpunit/phpunit](https://packagist.org/packages/phpunit/phpunit) | [9.3](phpunit/phpunit/9.3) |  |
+| [phpunit/phpunit](https://packagist.org/packages/phpunit/phpunit) | [9.6](phpunit/phpunit/9.6) |  |
 | [scheb/2fa-bundle](https://packagist.org/packages/scheb/2fa-bundle) | [6.0](scheb/2fa-bundle/6.0) | `2fa` |
 | [sensio/framework-extra-bundle](https://packagist.org/packages/sensio/framework-extra-bundle) | [5.2](sensio/framework-extra-bundle/5.2) | `annot`, `annotation`, `annotations`, `annots` |
 | [sensiolabs/ansi-to-html](https://packagist.org/packages/sensiolabs/ansi-to-html) | [1.2](sensiolabs/ansi-to-html/1.2) |  |
@@ -35,6 +35,8 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [symfony/amazon-sns-notifier](https://packagist.org/packages/symfony/amazon-sns-notifier) | [5.4](symfony/amazon-sns-notifier/5.4) | `amazon-sns-notifier`, `amazonsnsnotifier` |
 | [symfony/asset-mapper](https://packagist.org/packages/symfony/asset-mapper) | [6.3](symfony/asset-mapper/6.3) | `asset-mapper`, `assetmapper`, `importmap` |
 | [symfony/bandwidth-notifier](https://packagist.org/packages/symfony/bandwidth-notifier) | [6.3](symfony/bandwidth-notifier/6.3) | `bandwidth-notifier`, `bandwidthnotifier` |
+| [symfony/brevo-mailer](https://packagist.org/packages/symfony/brevo-mailer) | [6.4](symfony/brevo-mailer/6.4) | `brevo-mailer`, `brevomailer` |
+| [symfony/brevo-notifier](https://packagist.org/packages/symfony/brevo-notifier) | [6.4](symfony/brevo-notifier/6.4) | `brevo-notifier`, `brevonotifier` |
 | [symfony/chatwork-notifier](https://packagist.org/packages/symfony/chatwork-notifier) | [6.2](symfony/chatwork-notifier/6.2) | `chatwork-notifier`, `chatworknotifier` |
 | [symfony/click-send-notifier](https://packagist.org/packages/symfony/click-send-notifier) | [6.3](symfony/click-send-notifier/6.3) | `click-send-notifier`, `clicksendnotifier` |
 | [symfony/clickatell-notifier](https://packagist.org/packages/symfony/clickatell-notifier) | [5.3](symfony/clickatell-notifier/5.3) | `clickatell-notifier`, `clickatellnotifier` |
@@ -71,6 +73,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [symfony/mail-pace-mailer](https://packagist.org/packages/symfony/mail-pace-mailer) | [6.2](symfony/mail-pace-mailer/6.2) | `mail-pace-mailer`, `mailpacemailer` |
 | [symfony/mailchimp-mailer](https://packagist.org/packages/symfony/mailchimp-mailer) | [4.4](symfony/mailchimp-mailer/4.4) | `mailchimp-mailer`, `mailchimpmailer` |
 | [symfony/mailer](https://packagist.org/packages/symfony/mailer) | [4.3](symfony/mailer/4.3) | `mail`, `mailer` |
+| [symfony/mailer-send-mailer](https://packagist.org/packages/symfony/mailer-send-mailer) | [6.3](symfony/mailer-send-mailer/6.3) | `mailer-send-mailer`, `mailersendmailer` |
 | [symfony/mailgun-mailer](https://packagist.org/packages/symfony/mailgun-mailer) | [4.4](symfony/mailgun-mailer/4.4) | `mailgun-mailer`, `mailgunmailer` |
 | [symfony/mailjet-mailer](https://packagist.org/packages/symfony/mailjet-mailer) | [5.2](symfony/mailjet-mailer/5.2) | `mailjet-mailer`, `mailjetmailer` |
 | [symfony/mailjet-notifier](https://packagist.org/packages/symfony/mailjet-notifier) | [5.4](symfony/mailjet-notifier/5.4) | `mailjet-notifier`, `mailjetnotifier` |
@@ -87,17 +90,20 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [symfony/monolog-bundle](https://packagist.org/packages/symfony/monolog-bundle) | [3.7](symfony/monolog-bundle/3.7) | `log`, `logger`, `logging`, `logs`, `monolog`, `monolog-bundle`, `monologbundle` |
 | [symfony/nexmo-notifier](https://packagist.org/packages/symfony/nexmo-notifier) | [5.0](symfony/nexmo-notifier/5.0) | `nexmo-notifier`, `nexmonotifier` |
 | [symfony/notifier](https://packagist.org/packages/symfony/notifier) | [5.0](symfony/notifier/5.0) | `notifier` |
+| [symfony/novu-notifier](https://packagist.org/packages/symfony/novu-notifier) | [6.4](symfony/novu-notifier/6.4) | `novu-notifier`, `novunotifier` |
+| [symfony/ntfy-notifier](https://packagist.org/packages/symfony/ntfy-notifier) | [6.4](symfony/ntfy-notifier/6.4) | `ntfy-notifier`, `ntfynotifier` |
 | [symfony/octopush-notifier](https://packagist.org/packages/symfony/octopush-notifier) | [5.3](symfony/octopush-notifier/5.3) | `octopush-notifier`, `octopushnotifier` |
 | [symfony/one-signal-notifier](https://packagist.org/packages/symfony/one-signal-notifier) | [5.4](symfony/one-signal-notifier/5.4) | `one-signal-notifier`, `onesignalnotifier` |
 | [symfony/orange-sms-notifier](https://packagist.org/packages/symfony/orange-sms-notifier) | [6.1](symfony/orange-sms-notifier/6.1) | `orange-sms-notifier`, `orangesmsnotifier` |
 | [symfony/ovh-cloud-notifier](https://packagist.org/packages/symfony/ovh-cloud-notifier) | [5.1](symfony/ovh-cloud-notifier/5.1) | `ovh-cloud-notifier`, `ovhcloudnotifier` |
 | [symfony/pager-duty-notifier](https://packagist.org/packages/symfony/pager-duty-notifier) | [6.3](symfony/pager-duty-notifier/6.3) | `pager-duty-notifier`, `pagerdutynotifier` |
 | [symfony/panther](https://packagist.org/packages/symfony/panther) | [1.0](symfony/panther/1.0) | `panther` |
-| [symfony/phpunit-bridge](https://packagist.org/packages/symfony/phpunit-bridge) | [5.3](symfony/phpunit-bridge/5.3) | `phpunit-bridge`, `phpunitbridge`, `simple-phpunit`, `simplephpunit` |
+| [symfony/phpunit-bridge](https://packagist.org/packages/symfony/phpunit-bridge) | [6.3](symfony/phpunit-bridge/6.3) | `phpunit-bridge`, `phpunitbridge`, `simple-phpunit`, `simplephpunit` |
 | [symfony/plivo-notifier](https://packagist.org/packages/symfony/plivo-notifier) | [6.3](symfony/plivo-notifier/6.3) | `plivo-notifier`, `plivonotifier` |
 | [symfony/postmark-mailer](https://packagist.org/packages/symfony/postmark-mailer) | [4.4](symfony/postmark-mailer/4.4) | `postmark-mailer`, `postmarkmailer` |
 | [symfony/psr7-pack](https://packagist.org/packages/symfony/psr7-pack) | [1.0](symfony/psr7-pack/1.0) | `psr-7`, `psr-17`, `psr7`, `psr17` |
 | [symfony/pushover-notifier](https://packagist.org/packages/symfony/pushover-notifier) | [6.3](symfony/pushover-notifier/6.3) | `pushover-notifier`, `pushovernotifier` |
+| [symfony/redlink-notifier](https://packagist.org/packages/symfony/redlink-notifier) | [6.4](symfony/redlink-notifier/6.4) | `redlink-notifier`, `redlinknotifier` |
 | [symfony/requirements-checker](https://packagist.org/packages/symfony/requirements-checker) | [2.0](symfony/requirements-checker/2.0) | `req-check`, `req-checker`, `req-checks`, `reqcheck`, `reqchecker`, `reqchecks`, `requirement-check`, `requirement-checker`, `requirementcheck`, `requirementchecker`, `requirements-checker`, `requirementschecker` |
 | [symfony/ring-central-notifier](https://packagist.org/packages/symfony/ring-central-notifier) | [6.3](symfony/ring-central-notifier/6.3) | `ring-central-notifier`, `ringcentralnotifier` |
 | [symfony/rocket-chat-notifier](https://packagist.org/packages/symfony/rocket-chat-notifier) | [5.1](symfony/rocket-chat-notifier/5.1) | `rocket-chat-notifier`, `rocketchatnotifier` |
@@ -130,7 +136,10 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [symfony/uid](https://packagist.org/packages/symfony/uid) | [6.2](symfony/uid/6.2) | `uid` |
 | [symfony/ux-autocomplete](https://packagist.org/packages/symfony/ux-autocomplete) | [2.6](symfony/ux-autocomplete/2.6) | `ux-autocomplete`, `uxautocomplete` |
 | [symfony/ux-live-component](https://packagist.org/packages/symfony/ux-live-component) | [2.6](symfony/ux-live-component/2.6) | `ux-live-component`, `uxlivecomponent` |
+| [symfony/ux-react](https://packagist.org/packages/symfony/ux-react) | [2.9](symfony/ux-react/2.9) | `ux-react`, `uxreact` |
+| [symfony/ux-svelte](https://packagist.org/packages/symfony/ux-svelte) | [2.9](symfony/ux-svelte/2.9) | `ux-svelte`, `uxsvelte` |
 | [symfony/ux-translator](https://packagist.org/packages/symfony/ux-translator) | [2.9](symfony/ux-translator/2.9) | `ux-translator`, `uxtranslator` |
+| [symfony/ux-vue](https://packagist.org/packages/symfony/ux-vue) | [2.9](symfony/ux-vue/2.9) | `ux-vue`, `uxvue` |
 | [symfony/validator](https://packagist.org/packages/symfony/validator) | [5.3](symfony/validator/5.3) | `validation`, `validator` |
 | [symfony/vonage-notifier](https://packagist.org/packages/symfony/vonage-notifier) | [5.4](symfony/vonage-notifier/5.4) | `vonage-notifier`, `vonagenotifier` |
 | [symfony/web-profiler-bundle](https://packagist.org/packages/symfony/web-profiler-bundle) | [6.1](symfony/web-profiler-bundle/6.1) | `web-profiler-bundle`, `webprofilerbundle` |
