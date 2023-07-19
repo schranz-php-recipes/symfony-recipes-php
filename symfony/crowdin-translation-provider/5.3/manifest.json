@@ -1,4 +1,12 @@
 {
+    "add-lines": [
+        {
+            "file": "config/packages/notifier.yaml",
+            "position": "after_target",
+            "target": "        texter_transports:",
+            "content": "            crowdin: '%env(CROWDIN_DSN)%'"
+        }
+    ],
     "env": {
         "#1": "CROWDIN_DSN=crowdin://PROJECT_ID:API_TOKEN@ORGANIZATION_DOMAIN.default"
     }
