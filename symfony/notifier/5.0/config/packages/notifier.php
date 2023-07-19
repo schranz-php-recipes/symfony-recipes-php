@@ -7,6 +7,8 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 return static function (ContainerConfigurator $containerConfigurator): void {
     $containerConfigurator->extension('framework', [
         'notifier' => [
+            'chatter_transports' => null,
+            'texter_transports' => null,
             'channel_policy' => [
                 'urgent' => ['email'],
                 'high' => ['email'],
