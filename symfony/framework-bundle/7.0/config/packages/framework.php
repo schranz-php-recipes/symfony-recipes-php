@@ -7,7 +7,6 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 return static function (ContainerConfigurator $containerConfigurator): void {
     $containerConfigurator->extension('framework', [
         'secret' => '%env(APP_SECRET)%',
-        'http_method_override' => false,
         'handle_all_throwables' => true,
         'session' => [
             'handler_id' => null,
