@@ -301,6 +301,8 @@
         "router": "symfony/routing",
         "routing": "symfony/routing",
         "runtime": "symfony/runtime",
+        "scaleway-mailer": "symfony/scaleway-mailer",
+        "scalewaymailer": "symfony/scaleway-mailer",
         "sec-check": "sensiolabs/security-checker",
         "sec-checker": "sensiolabs/security-checker",
         "sec-checks": "sensiolabs/security-checker",
@@ -824,6 +826,9 @@
             "6.0",
             "6.1",
             "6.2"
+        ],
+        "symfony/scaleway-mailer": [
+            "6.4"
         ],
         "symfony/security-bundle": [
             "3.3",
