@@ -1,0 +1,42 @@
+{
+    "manifests": {
+        "symfony/translation": {
+            "manifest": {
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/",
+                    "translations/": "translations/"
+                }
+            },
+            "files": {
+                "config/packages/translation.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->extension('framework', [",
+                        "        'default_locale' => 'en',",
+                        "        'translator' => [",
+                        "            'default_path' => '%kernel.project_dir%/translations',",
+                        "            'fallbacks' => ['en'],",
+                        "        ],",
+                        "    ]);",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "translations/.gitignore": {
+                    "contents": [
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "0d821754923c256a79c8567d46310176884dd674"
+        }
+    }
+}
