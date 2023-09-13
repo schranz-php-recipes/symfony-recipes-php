@@ -3,7 +3,7 @@
         "api-platform/core": {
             "manifest": {
                 "bundles": {
-                    "ApiPlatform\\Core\\Bridge\\Symfony\\Bundle\\ApiPlatformBundle": [
+                    "ApiPlatform\\Symfony\\Bundle\\ApiPlatformBundle": [
                         "all"
                     ]
                 },
@@ -35,14 +35,16 @@
                         "",
                         "return static function (ContainerConfigurator $containerConfigurator): void {",
                         "    $containerConfigurator->extension('api_platform', [",
-                        "        'mapping' => [",
-                        "            'paths' => ['%kernel.project_dir%/src/Entity'],",
-                        "        ],",
-                        "        'patch_formats' => [",
-                        "            'json' => ['application/merge-patch+json'],",
-                        "        ],",
-                        "        'swagger' => [",
-                        "            'versions' => [3],",
+                        "        'title' => 'Hello API Platform',",
+                        "        'version' => '1.0.0',",
+                        "        'defaults' => [",
+                        "            'stateless' => true,",
+                        "            'cache_headers' => [",
+                        "                'vary' => ['Content-Type', 'Authorization', 'Origin'],",
+                        "            ],",
+                        "            'extra_properties' => [",
+                        "                'standard_put' => true,",
+                        "            ],",
                         "        ],",
                         "    ]);",
                         "};",
@@ -66,14 +68,14 @@
                     ],
                     "executable": false
                 },
-                "src/Entity/.gitignore": {
+                "src/ApiResource/.gitignore": {
                     "contents": [
                         ""
                     ],
                     "executable": false
                 }
             },
-            "ref": "6b3ba99f0e00068f98be8d25c9c2a346e27de795"
+            "ref": "a4f87d2607616e123e771580025a55ee1bf312a3"
         }
     }
 }
