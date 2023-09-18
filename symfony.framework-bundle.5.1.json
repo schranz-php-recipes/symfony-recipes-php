@@ -1,0 +1,252 @@
+{
+    "manifests": {
+        "symfony/framework-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Symfony\\Bundle\\FrameworkBundle\\FrameworkBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/",
+                    "public/": "%PUBLIC_DIR%/",
+                    "src/": "%SRC_DIR%/"
+                },
+                "composer-scripts": {
+                    "cache:clear": "symfony-cmd",
+                    "assets:install %PUBLIC_DIR%": "symfony-cmd"
+                },
+                "env": {
+                    "APP_ENV": "dev",
+                    "APP_SECRET": "%generate(secret)%",
+                    "#TRUSTED_PROXIES": "127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16",
+                    "#TRUSTED_HOSTS": "'^(localhost|example\\.com)$'"
+                },
+                "gitignore": [
+                    "/.env.local",
+                    "/.env.local.php",
+                    "/.env.*.local",
+                    "/%CONFIG_DIR%/secrets/prod/prod.decrypt.private.php",
+                    "/%PUBLIC_DIR%/bundles/",
+                    "/%VAR_DIR%/",
+                    "/vendor/"
+                ],
+                "post-install-output": [
+                    "  * <fg=blue>Run</> your application:",
+                    "    1. Go to the project directory",
+                    "    2. Create your code repository with the <comment>git init</comment> command",
+                    "    3. Download the Symfony CLI at <comment>https://symfony.com/download</> to install a development web server",
+                    "",
+                    "  * <fg=blue>Read</> the documentation at <comment>https://symfony.com/doc</>"
+                ]
+            },
+            "files": {
+                "config/packages/cache.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->extension('framework', [",
+                        "        'cache' => null,",
+                        "    ]);",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/framework.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->extension('framework', [",
+                        "        'secret' => '%env(APP_SECRET)%',",
+                        "        'session' => [",
+                        "            'handler_id' => null,",
+                        "            'cookie_secure' => 'auto',",
+                        "            'cookie_samesite' => 'lax',",
+                        "        ],",
+                        "        'php_errors' => [",
+                        "            'log' => true,",
+                        "        ],",
+                        "    ]);",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/test/framework.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->extension('framework', [",
+                        "        'test' => true,",
+                        "        'session' => [",
+                        "            'storage_id' => 'session.storage.mock_file',",
+                        "        ],",
+                        "    ]);",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/preload.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "if (file_exists(dirname(__DIR__).'/var/cache/prod/App_KernelProdContainer.preload.php')) {",
+                        "    require dirname(__DIR__).'/var/cache/prod/App_KernelProdContainer.preload.php';",
+                        "}",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/dev/framework.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\Routing\\Loader\\Configurator\\RoutingConfigurator;",
+                        "",
+                        "return static function (RoutingConfigurator $routingConfigurator): void {",
+                        "    $routingConfigurator->import('@FrameworkBundle/Resources/config/routing/errors.xml')",
+                        "        ->prefix('/_error');",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/services.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $services = $containerConfigurator->services();",
+                        "",
+                        "    $services->defaults()",
+                        "        ->autowire()",
+                        "        ->autoconfigure();",
+                        "",
+                        "    $services->load('App\\\\', __DIR__ . '/../src/')",
+                        "        ->exclude([",
+                        "        __DIR__ . '/../src/DependencyInjection/',",
+                        "        __DIR__ . '/../src/Entity/',",
+                        "        __DIR__ . '/../src/Kernel.php',",
+                        "    ]);",
+                        "",
+                        "    $services->load('App\\Controller\\\\', __DIR__ . '/../src/Controller/')",
+                        "        ->tag('controller.service_arguments');",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "public/index.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "use App\\Kernel;",
+                        "use Symfony\\Component\\Dotenv\\Dotenv;",
+                        "use Symfony\\Component\\ErrorHandler\\Debug;",
+                        "use Symfony\\Component\\HttpFoundation\\Request;",
+                        "",
+                        "require dirname(__DIR__).'/vendor/autoload.php';",
+                        "",
+                        "(new Dotenv())->bootEnv(dirname(__DIR__).'/.env');",
+                        "",
+                        "if ($_SERVER['APP_DEBUG']) {",
+                        "    umask(0000);",
+                        "",
+                        "    Debug::enable();",
+                        "}",
+                        "",
+                        "if ($trustedProxies = $_SERVER['TRUSTED_PROXIES'] ?? false) {",
+                        "    Request::setTrustedProxies(explode(',', $trustedProxies), Request::HEADER_X_FORWARDED_FOR | Request::HEADER_X_FORWARDED_PORT | Request::HEADER_X_FORWARDED_PROTO);",
+                        "}",
+                        "",
+                        "if ($trustedHosts = $_SERVER['TRUSTED_HOSTS'] ?? false) {",
+                        "    Request::setTrustedHosts([$trustedHosts]);",
+                        "}",
+                        "",
+                        "$kernel = new Kernel($_SERVER['APP_ENV'], (bool) $_SERVER['APP_DEBUG']);",
+                        "$request = Request::createFromGlobals();",
+                        "$response = $kernel->handle($request);",
+                        "$response->send();",
+                        "$kernel->terminate($request, $response);",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "src/Controller/.gitignore": {
+                    "contents": [
+                        ""
+                    ],
+                    "executable": false
+                },
+                "src/Kernel.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "namespace App;",
+                        "",
+                        "use Symfony\\Bundle\\FrameworkBundle\\Kernel\\MicroKernelTrait;",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "use Symfony\\Component\\HttpKernel\\Kernel as BaseKernel;",
+                        "use Symfony\\Component\\Routing\\Loader\\Configurator\\RoutingConfigurator;",
+                        "",
+                        "class Kernel extends BaseKernel",
+                        "{",
+                        "    use MicroKernelTrait;",
+                        "",
+                        "    protected function configureContainer(ContainerConfigurator $container): void",
+                        "    {",
+                        "        $container->import('../config/{packages}/*.yaml');",
+                        "        $container->import('../config/{packages}/'.$this->environment.'/*.yaml');",
+                        "",
+                        "        if (is_file(\\dirname(__DIR__).'/config/services.yaml')) {",
+                        "            $container->import('../config/services.yaml');",
+                        "            $container->import('../config/{services}_'.$this->environment.'.yaml');",
+                        "        } elseif (is_file($path = \\dirname(__DIR__).'/config/services.php')) {",
+                        "            (require $path)($container->withPath($path), $this);",
+                        "        }",
+                        "    }",
+                        "",
+                        "    protected function configureRoutes(RoutingConfigurator $routes): void",
+                        "    {",
+                        "        $routes->import('../config/{routes}/'.$this->environment.'/*.yaml');",
+                        "        $routes->import('../config/{routes}/*.yaml');",
+                        "",
+                        "        if (is_file(\\dirname(__DIR__).'/config/routes.yaml')) {",
+                        "            $routes->import('../config/routes.yaml');",
+                        "        } elseif (is_file($path = \\dirname(__DIR__).'/config/routes.php')) {",
+                        "            (require $path)($routes->withPath($path), $this);",
+                        "        }",
+                        "    }",
+                        "}",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "a12d469aa968f3d04fa2772887181aa139a0b3e4"
+        }
+    }
+}

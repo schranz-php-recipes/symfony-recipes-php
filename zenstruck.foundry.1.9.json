@@ -1,0 +1,58 @@
+{
+    "manifests": {
+        "zenstruck/foundry": {
+            "manifest": {
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                },
+                "bundles": {
+                    "Zenstruck\\Foundry\\ZenstruckFoundryBundle": [
+                        "dev",
+                        "test"
+                    ]
+                },
+                "post-install-output": [
+                    "  * You're ready to use zenstruck/foundry. Create your first factory with",
+                    "    <info>bin/console make:factory</>.",
+                    "",
+                    "  * <fg=blue>Read</> the documentation at <comment>https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html</>"
+                ]
+            },
+            "files": {
+                "config/packages/dev/zenstruck_foundry.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->extension('zenstruck_foundry', [",
+                        "        'auto_refresh_proxies' => true,",
+                        "    ]);",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/test/zenstruck_foundry.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->import(__DIR__ . '/../dev/zenstruck_foundry.php');",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "23fa6e5ea46526299b0408583e4bc6927bec2cd3"
+        }
+    }
+}

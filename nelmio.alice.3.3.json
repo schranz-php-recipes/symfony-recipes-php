@@ -1,0 +1,63 @@
+{
+    "manifests": {
+        "nelmio/alice": {
+            "manifest": {
+                "bundles": {
+                    "Nelmio\\Alice\\Bridge\\Symfony\\NelmioAliceBundle": [
+                        "dev",
+                        "test"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                },
+                "conflict": {
+                    "symfony/framework-bundle": "<5.3"
+                }
+            },
+            "files": {
+                "config/packages/nelmio_alice.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    if ($containerConfigurator->env() === 'dev') {",
+                        "        $containerConfigurator->extension('nelmio_alice', [",
+                        "            'functions_blacklist' => [",
+                        "                'current',",
+                        "                'shuffle',",
+                        "                'date',",
+                        "                'time',",
+                        "                'file',",
+                        "                'md5',",
+                        "                'sha1',",
+                        "            ],",
+                        "        ]);",
+                        "    }",
+                        "    if ($containerConfigurator->env() === 'test') {",
+                        "        $containerConfigurator->extension('nelmio_alice', [",
+                        "            'functions_blacklist' => [",
+                        "                'current',",
+                        "                'shuffle',",
+                        "                'date',",
+                        "                'time',",
+                        "                'file',",
+                        "                'md5',",
+                        "                'sha1',",
+                        "            ],",
+                        "        ]);",
+                        "    }",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "bad7943d9ccf222037fefd306a5ad58354608c27"
+        }
+    }
+}

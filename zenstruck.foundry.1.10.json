@@ -1,0 +1,53 @@
+{
+    "manifests": {
+        "zenstruck/foundry": {
+            "manifest": {
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                },
+                "bundles": {
+                    "Zenstruck\\Foundry\\ZenstruckFoundryBundle": [
+                        "dev",
+                        "test"
+                    ]
+                },
+                "conflict": {
+                    "symfony/framework-bundle": "<5.3"
+                },
+                "post-install-output": [
+                    "  * You're ready to use zenstruck/foundry. Create your first factory with",
+                    "    <info>bin/console make:factory</>.",
+                    "",
+                    "  * <fg=blue>Read</> the documentation at <comment>https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html</>"
+                ]
+            },
+            "files": {
+                "config/packages/zenstruck_foundry.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    if ($containerConfigurator->env() === 'dev') {",
+                        "        $containerConfigurator->extension('zenstruck_foundry', [",
+                        "            'auto_refresh_proxies' => true,",
+                        "        ]);",
+                        "    }",
+                        "    if ($containerConfigurator->env() === 'test') {",
+                        "        $containerConfigurator->extension('zenstruck_foundry', [",
+                        "            'auto_refresh_proxies' => true,",
+                        "        ]);",
+                        "    }",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "0e0cf0c3aa1674dec9ecd4e52b39c0d15e513225"
+        }
+    }
+}

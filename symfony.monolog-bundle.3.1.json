@@ -1,0 +1,126 @@
+{
+    "manifests": {
+        "symfony/monolog-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Symfony\\Bundle\\MonologBundle\\MonologBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/dev/monolog.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->extension('monolog', [",
+                        "        'handlers' => [",
+                        "            'main' => [",
+                        "                'type' => 'stream',",
+                        "                'path' => '%kernel.logs_dir%/%kernel.environment%.log',",
+                        "                'level' => 'debug',",
+                        "                'channels' => [",
+                        "                    '!event',",
+                        "                ],",
+                        "            ],",
+                        "            'console' => [",
+                        "                'type' => 'console',",
+                        "                'process_psr_3_messages' => false,",
+                        "                'channels' => [",
+                        "                    '!event',",
+                        "                    '!doctrine',",
+                        "                    '!console',",
+                        "                ],",
+                        "            ],",
+                        "        ],",
+                        "    ]);",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/prod/deprecations.php": {
+                    "contents": [
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/prod/monolog.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->extension('monolog', [",
+                        "        'handlers' => [",
+                        "            'main' => [",
+                        "                'type' => 'fingers_crossed',",
+                        "                'action_level' => 'error',",
+                        "                'handler' => 'nested',",
+                        "                'buffer_size' => 50,",
+                        "                'excluded_404s' => [",
+                        "                    '^/',",
+                        "                ],",
+                        "            ],",
+                        "            'nested' => [",
+                        "                'type' => 'stream',",
+                        "                'path' => '%kernel.logs_dir%/%kernel.environment%.log',",
+                        "                'level' => 'debug',",
+                        "            ],",
+                        "            'console' => [",
+                        "                'type' => 'console',",
+                        "                'process_psr_3_messages' => false,",
+                        "                'channels' => [",
+                        "                    '!event',",
+                        "                    '!doctrine',",
+                        "                ],",
+                        "            ],",
+                        "        ],",
+                        "    ]);",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/test/monolog.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->extension('monolog', [",
+                        "        'handlers' => [",
+                        "            'main' => [",
+                        "                'type' => 'stream',",
+                        "                'path' => '%kernel.logs_dir%/%kernel.environment%.log',",
+                        "                'level' => 'debug',",
+                        "                'channels' => [",
+                        "                    '!event',",
+                        "                ],",
+                        "            ],",
+                        "        ],",
+                        "    ]);",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "a9db2d3910689decbd1cc6a6944084b7596ce2f1"
+        }
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "manifests": {
+        "symfony/web-profiler-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Symfony\\Bundle\\WebProfilerBundle\\WebProfilerBundle": [
+                        "dev",
+                        "test"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/dev/web_profiler.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->extension('web_profiler', [",
+                        "        'toolbar' => true,",
+                        "        'intercept_redirects' => false,",
+                        "    ]);",
+                        "",
+                        "    $containerConfigurator->extension('framework', [",
+                        "        'profiler' => [",
+                        "            'only_exceptions' => false,",
+                        "        ],",
+                        "    ]);",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/test/web_profiler.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->extension('web_profiler', [",
+                        "        'toolbar' => false,",
+                        "        'intercept_redirects' => false,",
+                        "    ]);",
+                        "",
+                        "    $containerConfigurator->extension('framework', [",
+                        "        'profiler' => [",
+                        "            'collect' => false,",
+                        "        ],",
+                        "    ]);",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/dev/web_profiler.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\Routing\\Loader\\Configurator\\RoutingConfigurator;",
+                        "",
+                        "return static function (RoutingConfigurator $routingConfigurator): void {",
+                        "    $routingConfigurator->import('@WebProfilerBundle/Resources/config/routing/wdt.xml')",
+                        "        ->prefix('/_wdt');",
+                        "",
+                        "    $routingConfigurator->import('@WebProfilerBundle/Resources/config/routing/profiler.xml')",
+                        "        ->prefix('/_profiler');",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "2b299d590a6f37a8aade57cf433f27cea1816b37"
+        }
+    }
+}

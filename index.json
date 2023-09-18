@@ -1,0 +1,193 @@
+{
+    "aliases": {
+        "2fa": "scheb/2fa-bundle",
+        "alice": "hautelook/alice-bundle",
+        "api-admin": "api-platform/admin-pack",
+        "api-platform-admin": "api-platform/admin-pack",
+        "apiadmin": "api-platform/admin-pack",
+        "apiplatformadmin": "api-platform/admin-pack",
+        "asset-mapper": "symfony/asset-mapper",
+        "assetmapper": "symfony/asset-mapper",
+        "cli": "symfony/console",
+        "console": "symfony/console",
+        "cors": "nelmio/cors-bundle",
+        "foundry": "zenstruck/foundry",
+        "framework-bundle": "symfony/framework-bundle",
+        "frameworkbundle": "symfony/framework-bundle",
+        "importmap": "symfony/asset-mapper",
+        "log": "symfony/monolog-bundle",
+        "logger": "symfony/monolog-bundle",
+        "logging": "symfony/monolog-bundle",
+        "logs": "symfony/monolog-bundle",
+        "monolog": "symfony/monolog-bundle",
+        "monolog-bundle": "symfony/monolog-bundle",
+        "monologbundle": "symfony/monolog-bundle",
+        "notifier": "symfony/notifier",
+        "oauth-server": "league/oauth2-server-bundle",
+        "oauth2-server": "league/oauth2-server-bundle",
+        "oauth2server": "league/oauth2-server-bundle",
+        "oauthserver": "league/oauth2-server-bundle",
+        "react-admin": "api-platform/admin-pack",
+        "reactadmin": "api-platform/admin-pack",
+        "translation": "symfony/translation",
+        "translations": "symfony/translation",
+        "translator": "symfony/translation",
+        "web-profiler-bundle": "symfony/web-profiler-bundle",
+        "webprofilerbundle": "symfony/web-profiler-bundle"
+    },
+    "recipes": {
+        "api-platform/admin-pack": [
+            "1.0"
+        ],
+        "api-platform/core": [
+            "2.1",
+            "2.5",
+            "3.0",
+            "3.1"
+        ],
+        "doctrine/doctrine-bundle": [
+            "1.6",
+            "1.12",
+            "2.0",
+            "2.3",
+            "2.4",
+            "2.8",
+            "2.9",
+            "2.10"
+        ],
+        "hautelook/alice-bundle": [
+            "2.1",
+            "2.2"
+        ],
+        "league/oauth2-server-bundle": [
+            "0.4"
+        ],
+        "nelmio/alice": [
+            "3.2",
+            "3.3"
+        ],
+        "nelmio/cors-bundle": [
+            "1.5"
+        ],
+        "nelmio/security-bundle": [
+            "2.4"
+        ],
+        "scheb/2fa-bundle": [
+            "5.0",
+            "6.0"
+        ],
+        "symfony/asset-mapper": [
+            "6.3"
+        ],
+        "symfony/console": [
+            "3.3",
+            "4.2",
+            "4.4",
+            "5.1",
+            "5.3"
+        ],
+        "symfony/framework-bundle": [
+            "3.3",
+            "3.4",
+            "4.2",
+            "4.4",
+            "5.1",
+            "5.2",
+            "5.3",
+            "5.4",
+            "6.2",
+            "6.4",
+            "7.0"
+        ],
+        "symfony/monolog-bundle": [
+            "3.1",
+            "3.3",
+            "3.7"
+        ],
+        "symfony/notifier": [
+            "5.0"
+        ],
+        "symfony/translation": [
+            "3.3",
+            "5.3",
+            "6.3"
+        ],
+        "symfony/web-profiler-bundle": [
+            "3.3",
+            "5.3",
+            "6.1"
+        ],
+        "zenstruck/foundry": [
+            "1.9",
+            "1.10"
+        ]
+    },
+    "recipe-conflicts": {
+        "doctrine/doctrine-bundle": {
+            "2.4": {
+                "symfony/framework-bundle": "<5.3"
+            },
+            "2.8": {
+                "doctrine/orm": "<2.14",
+                "symfony/dependency-injection": "<6.2",
+                "symfony/framework-bundle": "<5.3"
+            },
+            "2.9": {
+                "doctrine/orm": "<2.14",
+                "symfony/dependency-injection": "<6.2",
+                "symfony/framework-bundle": "<5.3"
+            },
+            "2.10": {
+                "doctrine/orm": "<2.14",
+                "symfony/dependency-injection": "<6.2",
+                "symfony/framework-bundle": "<5.3"
+            }
+        },
+        "hautelook/alice-bundle": {
+            "2.2": {
+                "symfony/framework-bundle": "<5.3"
+            }
+        },
+        "nelmio/alice": {
+            "3.3": {
+                "symfony/framework-bundle": "<5.3"
+            }
+        },
+        "symfony/asset-mapper": {
+            "6.3": {
+                "symfony/flex": "<1.20.0 || >=2.0.0,<2.3.0",
+                "symfony/framework-bundle": "<6.3",
+                "symfony/twig-bundle": "<6.3"
+            }
+        },
+        "symfony/monolog-bundle": {
+            "3.7": {
+                "symfony/framework-bundle": "<5.3"
+            }
+        },
+        "symfony/web-profiler-bundle": {
+            "5.3": {
+                "symfony/framework-bundle": "<5.3"
+            },
+            "6.1": {
+                "symfony/framework-bundle": "<6.1"
+            }
+        },
+        "zenstruck/foundry": {
+            "1.10": {
+                "symfony/framework-bundle": "<5.3"
+            }
+        }
+    },
+    "versions": [],
+    "branch": "main",
+    "is_contrib": false,
+    "_links": {
+        "repository": "github.com/schranz-php-recipes/symfony-recipes-php",
+        "origin_template": "{package}:{version}@github.com/schranz-php-recipes/symfony-recipes-php:main",
+        "recipe_template": "https://raw.githubusercontent.com/schranz-php-recipes/symfony-recipes-php/flex/pull-53/{package_dotted}.{version}.json",
+        "recipe_template_relative": "{package_dotted}.{version}.json",
+        "archived_recipes_template": "https://raw.githubusercontent.com/schranz-php-recipes/symfony-recipes-php/flex/pull-53/archived/{package_dotted}/{ref}.json",
+        "archived_recipes_template_relative": "archived/{package_dotted}/{ref}.json"
+    }
+}

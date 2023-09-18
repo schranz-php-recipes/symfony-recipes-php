@@ -1,0 +1,54 @@
+{
+    "manifests": {
+        "nelmio/security-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Nelmio\\SecurityBundle\\NelmioSecurityBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/nelmio_security.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->extension('nelmio_security', [",
+                        "        'clickjacking' => [",
+                        "            'paths' => [",
+                        "                '^/.*' => 'DENY',",
+                        "            ],",
+                        "        ],",
+                        "        'content_type' => [",
+                        "            'nosniff' => true,",
+                        "        ],",
+                        "        'xss_protection' => [",
+                        "            'enabled' => true,",
+                        "            'mode_block' => true,",
+                        "        ],",
+                        "        'referrer_policy' => [",
+                        "            'enabled' => true,",
+                        "            'policies' => [",
+                        "                'no-referrer',",
+                        "                'strict-origin-when-cross-origin',",
+                        "            ],",
+                        "        ],",
+                        "    ]);",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "1922b300fdd2eae00b2e7e77691a549515d6c326"
+        }
+    }
+}
