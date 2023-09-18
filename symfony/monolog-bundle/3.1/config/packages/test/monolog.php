@@ -11,7 +11,9 @@ return static function (ContainerConfigurator $containerConfigurator): void {
                 'type' => 'stream',
                 'path' => '%kernel.logs_dir%/%kernel.environment%.log',
                 'level' => 'debug',
-                'channels' => ['!event'],
+                'channels' => [
+                    '!event',
+                ],
             ],
         ],
     ]);

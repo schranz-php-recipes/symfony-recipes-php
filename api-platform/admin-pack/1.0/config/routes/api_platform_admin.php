@@ -8,6 +8,6 @@ return static function (RoutingConfigurator $routingConfigurator): void {
     $routingConfigurator->add('admin', '/admin')
         ->controller('Symfony\Bundle\FrameworkBundle\Controller\TemplateController')
         ->defaults([
-            'template' => 'admin.html.twig',
-        ]);
+        'template' => 'admin.html.twig',
+    ]);
 };

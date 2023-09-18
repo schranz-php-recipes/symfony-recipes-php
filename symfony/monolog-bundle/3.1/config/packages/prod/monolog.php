@@ -12,7 +12,9 @@ return static function (ContainerConfigurator $containerConfigurator): void {
                 'action_level' => 'error',
                 'handler' => 'nested',
                 'buffer_size' => 50,
-                'excluded_404s' => ['^/'],
+                'excluded_404s' => [
+                    '^/',
+                ],
             ],
             'nested' => [
                 'type' => 'stream',
@@ -22,7 +24,10 @@ return static function (ContainerConfigurator $containerConfigurator): void {
             'console' => [
                 'type' => 'console',
                 'process_psr_3_messages' => false,
-                'channels' => ['!event', '!doctrine'],
+                'channels' => [
+                    '!event',
+                    '!doctrine',
+                ],
             ],
         ],
     ]);

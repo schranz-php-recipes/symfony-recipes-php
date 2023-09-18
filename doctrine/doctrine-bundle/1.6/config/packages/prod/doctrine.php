@@ -28,11 +28,15 @@ return static function (ContainerConfigurator $containerConfigurator): void {
 
     $services->set('doctrine.result_cache_provider', 'Symfony\Component\Cache\DoctrineProvider')
         ->private()
-        ->args([service('doctrine.result_cache_pool')]);
+        ->args([
+        service('doctrine.result_cache_pool'),
+    ]);
 
     $services->set('doctrine.system_cache_provider', 'Symfony\Component\Cache\DoctrineProvider')
         ->private()
-        ->args([service('doctrine.system_cache_pool')]);
+        ->args([
+        service('doctrine.system_cache_pool'),
+    ]);
 
     $containerConfigurator->extension('framework', [
         'cache' => [

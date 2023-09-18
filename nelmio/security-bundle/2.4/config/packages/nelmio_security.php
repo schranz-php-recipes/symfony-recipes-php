@@ -20,7 +20,10 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         ],
         'referrer_policy' => [
             'enabled' => true,
-            'policies' => ['no-referrer', 'strict-origin-when-cross-origin'],
+            'policies' => [
+                'no-referrer',
+                'strict-origin-when-cross-origin',
+            ],
         ],
     ]);
 };

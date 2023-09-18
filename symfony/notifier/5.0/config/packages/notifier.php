@@ -10,14 +10,24 @@ return static function (ContainerConfigurator $containerConfigurator): void {
             'chatter_transports' => null,
             'texter_transports' => null,
             'channel_policy' => [
-                'urgent' => ['email'],
-                'high' => ['email'],
-                'medium' => ['email'],
-                'low' => ['email'],
+                'urgent' => [
+                    'email',
+                ],
+                'high' => [
+                    'email',
+                ],
+                'medium' => [
+                    'email',
+                ],
+                'low' => [
+                    'email',
+                ],
             ],
-            'admin_recipients' => [[
-                'email' => 'admin@example.com',
-            ]],
+            'admin_recipients' => [
+                [
+                    'email' => 'admin@example.com',
+                ],
+            ],
         ],
     ]);
 };
