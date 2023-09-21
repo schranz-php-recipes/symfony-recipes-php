@@ -11,7 +11,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         'formats' => [
             'jsonld' => ['application/ld+json'],
         ],
-        'doc_formats' => [
+        'docs_formats' => [
             'jsonld' => ['application/ld+json'],
             'jsonopenapi' => ['application/vnd.openapi+json'],
             'html' => ['text/html'],
