@@ -408,12 +408,14 @@
         "ux-react": "symfony/ux-react",
         "ux-svelte": "symfony/ux-svelte",
         "ux-translator": "symfony/ux-translator",
+        "ux-twig-component": "symfony/ux-twig-component",
         "ux-vue": "symfony/ux-vue",
         "uxautocomplete": "symfony/ux-autocomplete",
         "uxlivecomponent": "symfony/ux-live-component",
         "uxreact": "symfony/ux-react",
         "uxsvelte": "symfony/ux-svelte",
         "uxtranslator": "symfony/ux-translator",
+        "uxtwigcomponent": "symfony/ux-twig-component",
         "uxvue": "symfony/ux-vue",
         "validation": "symfony/validator",
         "validator": "symfony/validator",
@@ -567,7 +569,8 @@
             "5.4"
         ],
         "symfony/asset-mapper": [
-            "6.3"
+            "6.3",
+            "6.4"
         ],
         "symfony/bandwidth-notifier": [
             "6.3"
@@ -956,6 +959,9 @@
             "2.8",
             "2.9"
         ],
+        "symfony/ux-twig-component": [
+            "2.13"
+        ],
         "symfony/ux-vue": [
             "2.8",
             "2.9"
@@ -1073,6 +1079,11 @@
         },
         "symfony/asset-mapper": {
             "6.3": {
+                "symfony/flex": "<1.20.0 || >=2.0.0,<2.3.0",
+                "symfony/framework-bundle": "<6.3",
+                "symfony/twig-bundle": "<6.3"
+            },
+            "6.4": {
                 "symfony/flex": "<1.20.0 || >=2.0.0,<2.3.0",
                 "symfony/framework-bundle": "<6.3",
                 "symfony/twig-bundle": "<6.3"
