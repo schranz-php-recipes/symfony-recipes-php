@@ -33,6 +33,8 @@
         "asset": "symfony/asset",
         "asset-mapper": "symfony/asset-mapper",
         "assetmapper": "symfony/asset-mapper",
+        "azure-mailer": "symfony/azure-mailer",
+        "azuremailer": "symfony/azure-mailer",
         "bandwidth-notifier": "symfony/bandwidth-notifier",
         "bandwidthnotifier": "symfony/bandwidth-notifier",
         "beanstalkd-messenger": "symfony/beanstalkd-messenger",
@@ -571,6 +573,9 @@
         "symfony/asset-mapper": [
             "6.3",
             "6.4"
+        ],
+        "symfony/azure-mailer": [
+            "7.1"
         ],
         "symfony/bandwidth-notifier": [
             "6.3"
