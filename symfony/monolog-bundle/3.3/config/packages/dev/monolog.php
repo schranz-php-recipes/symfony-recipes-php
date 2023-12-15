@@ -11,12 +11,18 @@ return static function (ContainerConfigurator $containerConfigurator): void {
                 'type' => 'stream',
                 'path' => '%kernel.logs_dir%/%kernel.environment%.log',
                 'level' => 'debug',
-                'channels' => ['!event'],
+                'channels' => [
+                    '!event',
+                ],
             ],
             'console' => [
                 'type' => 'console',
                 'process_psr_3_messages' => false,
-                'channels' => ['!event', '!doctrine', '!console'],
+                'channels' => [
+                    '!event',
+                    '!doctrine',
+                    '!console',
+                ],
             ],
         ],
     ]);

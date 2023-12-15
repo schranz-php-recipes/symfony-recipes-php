@@ -11,7 +11,11 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         'defaults' => [
             'stateless' => true,
             'cache_headers' => [
-                'vary' => ['Content-Type', 'Authorization', 'Origin'],
+                'vary' => [
+                    'Content-Type',
+                    'Authorization',
+                    'Origin',
+                ],
             ],
             'extra_properties' => [
                 'standard_put' => true,

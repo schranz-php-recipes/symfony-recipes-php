@@ -6,6 +6,9 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 
 return static function (ContainerConfigurator $containerConfigurator): void {
     $containerConfigurator->extension('scheb_two_factor', [
-        'security_tokens' => ['Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken', 'Symfony\Component\Security\Http\Authenticator\Token\PostAuthenticationToken'],
+        'security_tokens' => [
+            'Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken',
+            'Symfony\Component\Security\Http\Authenticator\Token\PostAuthenticationToken',
+        ],
     ]);
 };

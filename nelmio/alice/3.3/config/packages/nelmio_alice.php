@@ -7,12 +7,28 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 return static function (ContainerConfigurator $containerConfigurator): void {
     if ($containerConfigurator->env() === 'dev') {
         $containerConfigurator->extension('nelmio_alice', [
-            'functions_blacklist' => ['current', 'shuffle', 'date', 'time', 'file', 'md5', 'sha1'],
+            'functions_blacklist' => [
+                'current',
+                'shuffle',
+                'date',
+                'time',
+                'file',
+                'md5',
+                'sha1',
+            ],
         ]);
     }
     if ($containerConfigurator->env() === 'test') {
         $containerConfigurator->extension('nelmio_alice', [
-            'functions_blacklist' => ['current', 'shuffle', 'date', 'time', 'file', 'md5', 'sha1'],
+            'functions_blacklist' => [
+                'current',
+                'shuffle',
+                'date',
+                'time',
+                'file',
+                'md5',
+                'sha1',
+            ],
         ]);
     }
 };

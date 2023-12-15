@@ -11,6 +11,10 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         ->autowire()
         ->autoconfigure();
 
-    $services->load('App\\', __DIR__.'/../src/')
-        ->exclude([__DIR__.'/../src/DependencyInjection/', __DIR__.'/../src/Entity/', __DIR__.'/../src/Kernel.php']);
+    $services->load('App\\', __DIR__ . '/../src/')
+        ->exclude([
+        __DIR__ . '/../src/DependencyInjection/',
+        __DIR__ . '/../src/Entity/',
+        __DIR__ . '/../src/Kernel.php',
+    ]);
 };
