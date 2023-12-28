@@ -359,6 +359,8 @@
         "smsapi-notifier": "symfony/smsapi-notifier",
         "smsapinotifier": "symfony/smsapi-notifier",
         "smsbiurasnotifier": "symfony/sms-biuras-notifier",
+        "smsbox-notifier": "symfony/smsbox-notifier",
+        "smsboxnotifier": "symfony/smsbox-notifier",
         "smsc-notifier": "symfony/smsc-notifier",
         "smscnotifier": "symfony/smsc-notifier",
         "smsfactornotifier": "symfony/sms-factor-notifier",
@@ -900,6 +902,9 @@
         ],
         "symfony/smsapi-notifier": [
             "5.2"
+        ],
+        "symfony/smsbox-notifier": [
+            "7.1"
         ],
         "symfony/smsc-notifier": [
             "5.4"
