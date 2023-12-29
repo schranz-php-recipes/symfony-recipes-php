@@ -344,6 +344,8 @@
         "serialization": "symfony/serializer-pack",
         "serializer": "symfony/serializer-pack",
         "server": "symfony/web-server-bundle",
+        "sevenio-notifier": "symfony/sevenio-notifier",
+        "sevenionotifier": "symfony/sevenio-notifier",
         "simple-phpunit": "symfony/phpunit-bridge",
         "simple-textin-notifier": "symfony/simple-textin-notifier",
         "simplephpunit": "symfony/phpunit-bridge",
@@ -879,6 +881,9 @@
         ],
         "symfony/sendinblue-notifier": [
             "5.2"
+        ],
+        "symfony/sevenio-notifier": [
+            "7.1"
         ],
         "symfony/simple-textin-notifier": [
             "6.3"
