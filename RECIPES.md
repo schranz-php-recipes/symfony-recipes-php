@@ -124,13 +124,14 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [symfony/slack-notifier](https://packagist.org/packages/symfony/slack-notifier) | [5.2](symfony/slack-notifier/5.2) | `slack-notifier`, `slacknotifier` |
 | [symfony/sms-biuras-notifier](https://packagist.org/packages/symfony/sms-biuras-notifier) | [5.3](symfony/sms-biuras-notifier/5.3) | `sms-biuras-notifier`, `smsbiurasnotifier` |
 | [symfony/sms-factor-notifier](https://packagist.org/packages/symfony/sms-factor-notifier) | [6.2](symfony/sms-factor-notifier/6.2) | `sms-factor-notifier`, `smsfactornotifier` |
+| [symfony/sms-sluzba-notifier](https://packagist.org/packages/symfony/sms-sluzba-notifier) | [6.4](symfony/sms-sluzba-notifier/6.4) | `sms-sluzba-notifier`, `smssluzbanotifier` |
 | [symfony/sms77-notifier](https://packagist.org/packages/symfony/sms77-notifier) | [5.4](symfony/sms77-notifier/5.4) | `sms77-notifier`, `sms77notifier` |
 | [symfony/smsapi-notifier](https://packagist.org/packages/symfony/smsapi-notifier) | [5.2](symfony/smsapi-notifier/5.2) | `smsapi-notifier`, `smsapinotifier` |
 | [symfony/smsbox-notifier](https://packagist.org/packages/symfony/smsbox-notifier) | [7.1](symfony/smsbox-notifier/7.1) | `smsbox-notifier`, `smsboxnotifier` |
 | [symfony/smsc-notifier](https://packagist.org/packages/symfony/smsc-notifier) | [5.4](symfony/smsc-notifier/5.4) | `smsc-notifier`, `smscnotifier` |
 | [symfony/smsmode-notifier](https://packagist.org/packages/symfony/smsmode-notifier) | [6.3](symfony/smsmode-notifier/6.3) | `smsmode-notifier`, `smsmodenotifier` |
 | [symfony/spot-hit-notifier](https://packagist.org/packages/symfony/spot-hit-notifier) | [5.3](symfony/spot-hit-notifier/5.3) | `spot-hit-notifier`, `spothitnotifier` |
-| [symfony/stimulus-bundle](https://packagist.org/packages/symfony/stimulus-bundle) | [2.9](symfony/stimulus-bundle/2.9) | `stimulus`, `stimulus-bundle`, `stimulusbundle` |
+| [symfony/stimulus-bundle](https://packagist.org/packages/symfony/stimulus-bundle) | [2.13](symfony/stimulus-bundle/2.13) | `stimulus`, `stimulus-bundle`, `stimulusbundle` |
 | [symfony/swiftmailer-bundle](https://packagist.org/packages/symfony/swiftmailer-bundle) | [2.5](symfony/swiftmailer-bundle/2.5) | `swiftmailer`, `swiftmailer-bundle`, `swiftmailerbundle` |
 | [symfony/telegram-notifier](https://packagist.org/packages/symfony/telegram-notifier) | [5.0](symfony/telegram-notifier/5.0) | `telegram-notifier`, `telegramnotifier` |
 | [symfony/telnyx-notifier](https://packagist.org/packages/symfony/telnyx-notifier) | [5.4](symfony/telnyx-notifier/5.4) | `telnyx-notifier`, `telnyxnotifier` |

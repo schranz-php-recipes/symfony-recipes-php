@@ -356,6 +356,7 @@
         "slacknotifier": "symfony/slack-notifier",
         "sms-biuras-notifier": "symfony/sms-biuras-notifier",
         "sms-factor-notifier": "symfony/sms-factor-notifier",
+        "sms-sluzba-notifier": "symfony/sms-sluzba-notifier",
         "sms77-notifier": "symfony/sms77-notifier",
         "sms77notifier": "symfony/sms77-notifier",
         "smsapi-notifier": "symfony/smsapi-notifier",
@@ -368,6 +369,7 @@
         "smsfactornotifier": "symfony/sms-factor-notifier",
         "smsmode-notifier": "symfony/smsmode-notifier",
         "smsmodenotifier": "symfony/smsmode-notifier",
+        "smssluzbanotifier": "symfony/sms-sluzba-notifier",
         "spot-hit-notifier": "symfony/spot-hit-notifier",
         "spothitnotifier": "symfony/spot-hit-notifier",
         "stimulus": "symfony/stimulus-bundle",
@@ -902,6 +904,9 @@
         "symfony/sms-factor-notifier": [
             "6.2"
         ],
+        "symfony/sms-sluzba-notifier": [
+            "6.4"
+        ],
         "symfony/sms77-notifier": [
             "5.4"
         ],
@@ -922,7 +927,8 @@
         ],
         "symfony/stimulus-bundle": [
             "2.8",
-            "2.9"
+            "2.9",
+            "2.13"
         ],
         "symfony/swiftmailer-bundle": [
             "2.5"
@@ -1170,6 +1176,10 @@
         },
         "symfony/stimulus-bundle": {
             "2.9": {
+                "symfony/flex": "<1.20.0 || >=2.0.0,<2.3.0",
+                "symfony/webpack-encore-bundle": "<2.0"
+            },
+            "2.13": {
                 "symfony/flex": "<1.20.0 || >=2.0.0,<2.3.0",
                 "symfony/webpack-encore-bundle": "<2.0"
             }
