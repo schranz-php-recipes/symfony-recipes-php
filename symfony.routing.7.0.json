@@ -1,0 +1,59 @@
+{
+    "manifests": {
+        "symfony/routing": {
+            "manifest": {
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                },
+                "conflict": {
+                    "symfony/framework-bundle": "<7.0"
+                }
+            },
+            "files": {
+                "config/packages/routing.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->extension('framework', [",
+                        "        'router' => null,",
+                        "    ]);",
+                        "    if ($containerConfigurator->env() === 'prod') {",
+                        "        $containerConfigurator->extension('framework', [",
+                        "            'router' => [",
+                        "                'strict_requirements' => null,",
+                        "            ],",
+                        "        ]);",
+                        "    }",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\Routing\\Loader\\Configurator\\RoutingConfigurator;",
+                        "",
+                        "return static function (RoutingConfigurator $routingConfigurator): void {",
+                        "    $routingConfigurator->import([",
+                        "        'path' => '../src/Controller/',",
+                        "        'namespace' => 'App\\Controller',",
+                        "    ], 'attribute');",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "5e0d5ec1c8d74a403041abaf826d075c3c69a9a7"
+        }
+    }
+}

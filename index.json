@@ -302,6 +302,8 @@
         "requirementchecker": "symfony/requirements-checker",
         "requirements-checker": "symfony/requirements-checker",
         "requirementschecker": "symfony/requirements-checker",
+        "resend-mailer": "symfony/resend-mailer",
+        "resendmailer": "symfony/resend-mailer",
         "ring-central-notifier": "symfony/ring-central-notifier",
         "ringcentralnotifier": "symfony/ring-central-notifier",
         "rocket-chat-notifier": "symfony/rocket-chat-notifier",
@@ -822,7 +824,7 @@
             "6.3"
         ],
         "symfony/phrase-translation-provider": [
-            "6.3"
+            "6.4"
         ],
         "symfony/plivo-notifier": [
             "6.3"
@@ -844,6 +846,9 @@
             "1.0",
             "2.0"
         ],
+        "symfony/resend-mailer": [
+            "7.1"
+        ],
         "symfony/ring-central-notifier": [
             "6.3"
         ],
@@ -858,7 +863,8 @@
             "5.3",
             "6.0",
             "6.1",
-            "6.2"
+            "6.2",
+            "7.0"
         ],
         "symfony/scaleway-mailer": [
             "6.4"
@@ -965,7 +971,8 @@
             "6.3"
         ],
         "symfony/uid": [
-            "6.2"
+            "6.2",
+            "7.0"
         ],
         "symfony/unifonic-notifier": [
             "7.1"
@@ -1000,7 +1007,8 @@
         "symfony/validator": [
             "4.1",
             "4.3",
-            "5.3"
+            "5.3",
+            "7.0"
         ],
         "symfony/vonage-notifier": [
             "5.4"
@@ -1161,6 +1169,9 @@
             },
             "6.2": {
                 "symfony/framework-bundle": "<6.2"
+            },
+            "7.0": {
+                "symfony/framework-bundle": "<7.0"
             }
         },
         "symfony/security-bundle": {
@@ -1198,6 +1209,9 @@
         "symfony/uid": {
             "6.2": {
                 "symfony/framework-bundle": "<6.2"
+            },
+            "7.0": {
+                "symfony/framework-bundle": "<7.0"
             }
         },
         "symfony/ux-react": {
@@ -1226,6 +1240,9 @@
         "symfony/validator": {
             "5.3": {
                 "symfony/framework-bundle": "<5.3"
+            },
+            "7.0": {
+                "symfony/framework-bundle": "<7.0"
             }
         },
         "symfony/web-profiler-bundle": {

@@ -22,6 +22,7 @@
                         "        'translator' => [",
                         "            'default_path' => '%kernel.project_dir%/translations',",
                         "            'fallbacks' => ['en'],",
+                        "            'providers' => null,",
                         "        ],",
                         "    ]);",
                         "};",
@@ -36,7 +37,7 @@
                     "executable": false
                 }
             },
-            "ref": "0d821754923c256a79c8567d46310176884dd674"
+            "ref": "9021584f4c205551aa243186f66e9a3a33f923aa"
         }
     }
 }

@@ -1,14 +1,16 @@
 {
     "manifests": {
-        "symfony/translation": {
+        "symfony/validator": {
             "manifest": {
                 "copy-from-recipe": {
-                    "config/": "%CONFIG_DIR%/",
-                    "translations/": "translations/"
+                    "config/": "%CONFIG_DIR%/"
+                },
+                "conflict": {
+                    "symfony/framework-bundle": "<7.0"
                 }
             },
             "files": {
-                "config/packages/translation.php": {
+                "config/packages/validator.php": {
                     "contents": [
                         "<?php",
                         "",
@@ -18,26 +20,22 @@
                         "",
                         "return static function (ContainerConfigurator $containerConfigurator): void {",
                         "    $containerConfigurator->extension('framework', [",
-                        "        'default_locale' => 'en',",
-                        "        'translator' => [",
-                        "            'default_path' => '%kernel.project_dir%/translations',",
-                        "            'fallbacks' => ['en'],",
-                        "            'providers' => null,",
-                        "        ],",
+                        "        'validation' => null,",
                         "    ]);",
+                        "    if ($containerConfigurator->env() === 'test') {",
+                        "        $containerConfigurator->extension('framework', [",
+                        "            'validation' => [",
+                        "                'not_compromised_password' => false,",
+                        "            ],",
+                        "        ]);",
+                        "    }",
                         "};",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "translations/.gitignore": {
-                    "contents": [
                         ""
                     ],
                     "executable": false
                 }
             },
-            "ref": "9021584f4c205551aa243186f66e9a3a33f923aa"
+            "ref": "b36f6cbeb50e80bbbc84f0436b8f806b811b6004"
         }
     }
 }
