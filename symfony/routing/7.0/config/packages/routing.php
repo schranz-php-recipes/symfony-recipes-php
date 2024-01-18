@@ -6,14 +6,12 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 
 return static function (ContainerConfigurator $containerConfigurator): void {
     $containerConfigurator->extension('framework', [
-        'secret' => '%env(APP_SECRET)%',
-        'session' => true,
+        'router' => null,
     ]);
-    if ($containerConfigurator->env() === 'test') {
+    if ($containerConfigurator->env() === 'prod') {
         $containerConfigurator->extension('framework', [
-            'test' => true,
-            'session' => [
-                'storage_factory_id' => 'session.storage.factory.mock_file',
+            'router' => [
+                'strict_requirements' => null,
             ],
         ]);
     }
