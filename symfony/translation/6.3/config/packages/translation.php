@@ -10,6 +10,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         'translator' => [
             'default_path' => '%kernel.project_dir%/translations',
             'fallbacks' => ['en'],
+            'providers' => null,
         ],
     ]);
 };

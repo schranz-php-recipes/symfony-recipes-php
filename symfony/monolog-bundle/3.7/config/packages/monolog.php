@@ -68,6 +68,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
                     'type' => 'stream',
                     'channels' => ['deprecation'],
                     'path' => 'php://stderr',
+                    'formatter' => 'monolog.formatter.json',
                 ],
             ],
         ]);
