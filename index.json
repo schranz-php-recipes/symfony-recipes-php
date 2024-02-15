@@ -282,6 +282,8 @@
         "psr17": "symfony/psr7-pack",
         "pushover-notifier": "symfony/pushover-notifier",
         "pushovernotifier": "symfony/pushover-notifier",
+        "pushy-notifier": "symfony/pushy-notifier",
+        "pushynotifier": "symfony/pushy-notifier",
         "rate-limiter": "symfony/rate-limiter",
         "ratelimiter": "symfony/rate-limiter",
         "react-admin": "api-platform/admin-pack",
@@ -838,6 +840,9 @@
         ],
         "symfony/pushover-notifier": [
             "6.3"
+        ],
+        "symfony/pushy-notifier": [
+            "7.1"
         ],
         "symfony/redlink-notifier": [
             "6.4"
