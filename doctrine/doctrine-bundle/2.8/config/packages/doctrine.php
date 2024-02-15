@@ -8,6 +8,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $containerConfigurator->extension('doctrine', [
         'dbal' => [
             'url' => '%env(resolve:DATABASE_URL)%',
+            'use_savepoints' => true,
         ],
         'orm' => [
             'auto_generate_proxy_classes' => true,
