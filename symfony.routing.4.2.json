@@ -35,7 +35,11 @@
                         "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
                         "",
                         "return static function (ContainerConfigurator $containerConfigurator): void {",
-                        "    $containerConfigurator->extension('framework', ['router' => ['utf8' => true]]);",
+                        "    $containerConfigurator->extension('framework', [",
+                        "        'router' => [",
+                        "            'utf8' => true,",
+                        "        ],",
+                        "    ]);",
                         "};",
                         ""
                     ],
@@ -48,7 +52,7 @@
                     "executable": false
                 }
             },
-            "ref": "cda17b10e4e6e2e71ae7a929b297e78a0aba066d"
+            "ref": "31bc403a65c30bf5bbf721c52fcb0356374473af"
         }
     }
 }
