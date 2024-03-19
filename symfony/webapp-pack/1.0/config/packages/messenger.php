@@ -22,6 +22,10 @@ return static function (ContainerConfigurator $containerConfigurator): void {
                 ],
                 'failed' => 'doctrine://default?queue_name=failed',
             ],
+            'default_bus' => 'messenger.bus.default',
+            'buses' => [
+                'messenger.bus.default' => [],
+            ],
             'routing' => [
                 'Symfony\Component\Mailer\Messenger\SendEmailMessage' => 'async',
                 'Symfony\Component\Notifier\Message\ChatMessage' => 'async',
