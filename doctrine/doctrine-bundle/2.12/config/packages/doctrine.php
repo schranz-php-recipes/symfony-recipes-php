@@ -28,7 +28,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
                 ],
             ],
             'controller_resolver' => [
-                'auto_mapping' => true,
+                'auto_mapping' => false,
             ],
         ],
     ]);
