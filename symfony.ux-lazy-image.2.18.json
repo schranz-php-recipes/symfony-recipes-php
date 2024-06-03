@@ -1,0 +1,36 @@
+{
+    "manifests": {
+        "symfony/ux-lazy-image": {
+            "manifest": {
+                "bundles": {
+                    "Symfony\\UX\\LazyImage\\LazyImageBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/lazy_image.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->extension('framework', [",
+                        "        'cache' => null,",
+                        "    ]);",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "9af66c662f7abbb15aaf178ed1a9cb16bb0ee4b3"
+        }
+    }
+}
