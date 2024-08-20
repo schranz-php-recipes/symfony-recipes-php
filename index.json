@@ -393,6 +393,8 @@
         "stimulusbundle": "symfony/stimulus-bundle",
         "stopwatch": "symfony/stopwatch",
         "string": "symfony/string",
+        "sweego-mailer": "symfony/sweego-mailer",
+        "sweegomailer": "symfony/sweego-mailer",
         "swiftmailer": "symfony/swiftmailer-bundle",
         "swiftmailer-bundle": "symfony/swiftmailer-bundle",
         "swiftmailerbundle": "symfony/swiftmailer-bundle",
@@ -983,6 +985,9 @@
             "2.8",
             "2.9",
             "2.13"
+        ],
+        "symfony/sweego-mailer": [
+            "7.2"
         ],
         "symfony/swiftmailer-bundle": [
             "2.5"
