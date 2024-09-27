@@ -1,0 +1,78 @@
+{
+    "manifests": {
+        "api-platform/core": {
+            "manifest": {
+                "bundles": {
+                    "ApiPlatform\\Symfony\\Bundle\\ApiPlatformBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/",
+                    "src/": "%SRC_DIR%/"
+                },
+                "post-install-output": [
+                    "  * Your API is almost ready:",
+                    "    1. Create your first API resource in <info>src/ApiResource</info>;",
+                    "    2. Go to <info>/api</info> to browse your API",
+                    "",
+                    "  * Using MakerBundle? Try <info>php bin/console make:entity --api-resource</info> ",
+                    "",
+                    "  * To enable the GraphQL support, run <comment>composer require webonyx/graphql-php</>,",
+                    "    then browse <info>/api/graphql</info>.",
+                    "",
+                    "  * <fg=blue>Read</> the documentation at <comment>https://api-platform.com/docs/</>"
+                ]
+            },
+            "files": {
+                "config/packages/api_platform.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->extension('api_platform', [",
+                        "        'title' => 'Hello API Platform',",
+                        "        'version' => '1.0.0',",
+                        "        'defaults' => [",
+                        "            'stateless' => true,",
+                        "            'cache_headers' => [",
+                        "                'vary' => ['Content-Type', 'Authorization', 'Origin'],",
+                        "            ],",
+                        "        ],",
+                        "    ]);",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/api_platform.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\Routing\\Loader\\Configurator\\RoutingConfigurator;",
+                        "",
+                        "return static function (RoutingConfigurator $routingConfigurator): void {",
+                        "    $routingConfigurator->import('.', 'api_platform')",
+                        "        ->prefix('/api');",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "src/ApiResource/.gitignore": {
+                    "contents": [
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "31b57d83dd28459ab6033d43084b67ff0df59875"
+        }
+    }
+}
