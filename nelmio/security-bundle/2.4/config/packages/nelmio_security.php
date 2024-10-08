@@ -14,10 +14,6 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         'content_type' => [
             'nosniff' => true,
         ],
-        'xss_protection' => [
-            'enabled' => true,
-            'mode_block' => true,
-        ],
         'referrer_policy' => [
             'enabled' => true,
             'policies' => ['no-referrer', 'strict-origin-when-cross-origin'],
