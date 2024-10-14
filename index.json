@@ -167,7 +167,9 @@
         "ldap": "symfony/ldap",
         "light-sms-notifier": "symfony/light-sms-notifier",
         "lightsmsnotifier": "symfony/light-sms-notifier",
+        "line-bot-notifier": "symfony/line-bot-notifier",
         "line-notify-notifier": "symfony/line-notify-notifier",
+        "linebotnotifier": "symfony/line-bot-notifier",
         "linenotifynotifier": "symfony/line-notify-notifier",
         "linked-in-notifier": "symfony/linked-in-notifier",
         "linkedinnotifier": "symfony/linked-in-notifier",
@@ -747,6 +749,9 @@
         ],
         "symfony/light-sms-notifier": [
             "5.3"
+        ],
+        "symfony/line-bot-notifier": [
+            "7.2"
         ],
         "symfony/line-notify-notifier": [
             "6.3"
