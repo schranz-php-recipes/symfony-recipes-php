@@ -32,14 +32,10 @@
                         "",
                         "return static function (ContainerConfigurator $containerConfigurator): void {",
                         "    if ($containerConfigurator->env() === 'dev') {",
-                        "        $containerConfigurator->extension('zenstruck_foundry', [",
-                        "            'auto_refresh_proxies' => true,",
-                        "        ]);",
+                        "        $containerConfigurator->extension('zenstruck_foundry', ['auto_refresh_proxies' => true]);",
                         "    }",
                         "    if ($containerConfigurator->env() === 'test') {",
-                        "        $containerConfigurator->extension('zenstruck_foundry', [",
-                        "            'auto_refresh_proxies' => true,",
-                        "        ]);",
+                        "        $containerConfigurator->extension('zenstruck_foundry', ['auto_refresh_proxies' => true]);",
                         "    }",
                         "};",
                         ""
@@ -47,7 +43,7 @@
                     "executable": false
                 }
             },
-            "ref": "0e0cf0c3aa1674dec9ecd4e52b39c0d15e513225"
+            "ref": "d6f82afa56c0c120fcf609d6aef4614c152d6cfe"
         }
     }
 }
