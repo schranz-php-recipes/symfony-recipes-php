@@ -8,6 +8,14 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $containerConfigurator->extension('framework', [
         'secret' => '%env(APP_SECRET)%',
         'session' => true,
+        'form' => [
+            'csrf_protection' => [
+                'token_id' => 'submit',
+            ],
+        ],
+        'csrf_protection' => [
+            'stateless_token_ids' => ['submit', 'authenticate', 'logout'],
+        ],
     ]);
     if ($containerConfigurator->env() === 'test') {
         $containerConfigurator->extension('framework', [
