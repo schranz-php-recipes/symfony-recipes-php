@@ -1,0 +1,38 @@
+{
+    "manifests": {
+        "symfony/form": {
+            "manifest": {
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/csrf.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->extension('framework', [",
+                        "        'form' => [",
+                        "            'csrf_protection' => [",
+                        "                'token_id' => 'submit',",
+                        "            ],",
+                        "        ],",
+                        "        'csrf_protection' => [",
+                        "            'stateless_token_ids' => ['submit', 'authenticate', 'logout'],",
+                        "        ],",
+                        "    ]);",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "cd0302853a8ef2c170b1beffec6d35f4292d7d14"
+        }
+    }
+}

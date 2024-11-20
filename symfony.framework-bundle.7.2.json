@@ -73,14 +73,6 @@
                         "    $containerConfigurator->extension('framework', [",
                         "        'secret' => '%env(APP_SECRET)%',",
                         "        'session' => true,",
-                        "        'form' => [",
-                        "            'csrf_protection' => [",
-                        "                'token_id' => 'submit',",
-                        "            ],",
-                        "        ],",
-                        "        'csrf_protection' => [",
-                        "            'stateless_token_ids' => ['submit', 'authenticate', 'logout'],",
-                        "        ],",
                         "    ]);",
                         "    if ($containerConfigurator->env() === 'test') {",
                         "        $containerConfigurator->extension('framework', [",
@@ -185,7 +177,7 @@
                     "executable": false
                 }
             },
-            "ref": "a701fe82f8c43871b2abc3ece041a65843d64bb5"
+            "ref": "65d8b885923e070710552ea849dc573dbac24781"
         }
     }
 }

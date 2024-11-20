@@ -694,6 +694,9 @@
         "symfony/flex": [
             "1.0"
         ],
+        "symfony/form": [
+            "7.2"
+        ],
         "symfony/forty-six-elks-notifier": [
             "6.1"
         ],
@@ -1099,6 +1102,7 @@
             "2.9"
         ],
         "symfony/ux-turbo": [
+            "2.19",
             "2.20"
         ],
         "symfony/ux-twig-component": [
