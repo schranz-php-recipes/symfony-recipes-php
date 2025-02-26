@@ -1,0 +1,34 @@
+{
+    "manifests": {
+        "easycorp/easyadmin-bundle": {
+            "manifest": {
+                "bundles": {
+                    "EasyCorp\\Bundle\\EasyAdminBundle\\EasyAdminBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/easyadmin.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\Routing\\Loader\\Configurator\\RoutingConfigurator;",
+                        "",
+                        "return static function (RoutingConfigurator $routingConfigurator): void {",
+                        "    $routingConfigurator->import('.', 'easyadmin.routes');",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "62b8dee0d547a77ca468cba8fd2f80d971a2e5d9"
+        }
+    }
+}
