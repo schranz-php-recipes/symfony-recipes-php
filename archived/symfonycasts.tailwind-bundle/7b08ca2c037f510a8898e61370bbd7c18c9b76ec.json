@@ -1,0 +1,36 @@
+{
+    "manifests": {
+        "symfonycasts/tailwind-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Symfonycasts\\TailwindBundle\\SymfonycastsTailwindBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/symfonycasts_tailwind.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "",
+                        "return static function (ContainerConfigurator $containerConfigurator): void {",
+                        "    $containerConfigurator->extension('symfonycasts_tailwind', [",
+                        "        'binary_version' => 'v3.4.17',",
+                        "    ]);",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "7b08ca2c037f510a8898e61370bbd7c18c9b76ec"
+        }
+    }
+}
