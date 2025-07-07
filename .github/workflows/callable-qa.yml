@@ -13,14 +13,6 @@ on:
             find_yaml:
                 required: false
                 type: string
-            skeleton_74:
-                required: false
-                default: symfony/skeleton
-                type: string
-            skeleton_74_version:
-                required: false
-                default: ^5
-                type: string
             skeleton_81:
                 required: false
                 default: symfony/skeleton
@@ -28,6 +20,14 @@ on:
             skeleton_81_version:
                 required: false
                 default: ^6
+                type: string
+            skeleton_82:
+                required: false
+                default: symfony/skeleton
+                type: string
+            skeleton_82_version:
+                required: false
+                default: ^7
                 type: string
         secrets:
             token:
@@ -257,34 +257,6 @@ jobs:
                     [[ "" != "$PACKAGES" ]]
 
             -
-                name: Setup PHP 7.4
-                if: "always() && steps.config.outcome == 'success'"
-                uses: shivammathur/setup-php@v2
-                with:
-                    coverage: "none"
-                    php-version: "7.4"
-
-            -
-                name: Create-project with skeleton ^5
-                if: "always() && steps.config.outcome == 'success'"
-                run: |
-                    set -x
-                    php -v
-                    composer create-project --ansi "${{ inputs.skeleton_74 }}:${{ inputs.skeleton_74_version }}" --stability dev skeleton_74
-                    cd skeleton_74
-                    composer config extra.symfony.allow-contrib ${{ inputs.contrib && 'true' || 'false' }}
-                    composer config minimum-stability dev
-                    export SYMFONY_ENDPOINT=https://raw.githubusercontent.com/${{ github.repository }}/flex/pull-${{ github.event.number }}/index.json
-                    composer require -W --ansi $PACKAGES
-                    EXIT_CODE=$?
-
-                    if [[ EXIT_CODE -eq 2 ]]; then
-                        echo -e "\n#\n#\n# You can ignore this error if your package does not support Symfony 5\n#\n#\n#\n"
-                    fi
-
-                    exit $EXIT_CODE
-
-            -
                 name: Setup PHP 8.1
                 if: "always() && steps.config.outcome == 'success'"
                 uses: shivammathur/setup-php@v2
@@ -304,3 +276,38 @@ jobs:
                     composer config minimum-stability dev
                     export SYMFONY_ENDPOINT=https://raw.githubusercontent.com/${{ github.repository }}/flex/pull-${{ github.event.number }}/index.json
                     composer require -W --ansi $PACKAGES
+                    EXIT_CODE=$?
+
+                    if [[ EXIT_CODE -eq 2 ]]; then
+                        echo -e "\n#\n#\n# You can ignore this error if your package does not support Symfony 6\n#\n#\n#\n"
+                    fi
+
+                    exit $EXIT_CODE
+
+            -
+                name: Setup PHP 8.2
+                if: "always() && steps.config.outcome == 'success'"
+                uses: shivammathur/setup-php@v2
+                with:
+                    coverage: "none"
+                    php-version: "8.2"
+
+            -
+                name: Create-project with skeleton ^7
+                if: "always() && steps.config.outcome == 'success'"
+                run: |
+                    set -x
+                    php -v
+                    composer create-project --ansi "${{ inputs.skeleton_82 }}:${{ inputs.skeleton_82_version }}" --stability dev skeleton_82
+                    cd skeleton_82
+                    composer config extra.symfony.allow-contrib ${{ inputs.contrib && 'true' || 'false' }}
+                    composer config minimum-stability dev
+                    export SYMFONY_ENDPOINT=https://raw.githubusercontent.com/${{ github.repository }}/flex/pull-${{ github.event.number }}/index.json
+                    composer require -W --ansi $PACKAGES
+                    EXIT_CODE=$?
+
+                    if [[ EXIT_CODE -eq 2 ]]; then
+                        echo -e "\n#\n#\n# You can ignore this error if your package does not support Symfony 7\n#\n#\n#\n"
+                    fi
+
+                    exit $EXIT_CODE                
