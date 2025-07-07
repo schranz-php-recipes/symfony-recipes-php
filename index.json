@@ -176,6 +176,10 @@
         "linenotifynotifier": "symfony/line-notify-notifier",
         "linked-in-notifier": "symfony/linked-in-notifier",
         "linkedinnotifier": "symfony/linked-in-notifier",
+        "live-component": "symfony/ux-live-component",
+        "live-components": "symfony/ux-live-component",
+        "livecomponent": "symfony/ux-live-component",
+        "livecomponents": "symfony/ux-live-component",
         "lock": "symfony/lock",
         "loco-translation-provider": "symfony/loco-translation-provider",
         "locotranslationprovider": "symfony/loco-translation-provider",
@@ -334,6 +338,9 @@
         "runtime": "symfony/runtime",
         "scaleway-mailer": "symfony/scaleway-mailer",
         "scalewaymailer": "symfony/scaleway-mailer",
+        "schedule": "symfony/scheduler",
+        "scheduler": "symfony/scheduler",
+        "scheduling": "symfony/scheduler",
         "sec-check": "sensiolabs/security-checker",
         "sec-checker": "sensiolabs/security-checker",
         "sec-checks": "sensiolabs/security-checker",
@@ -427,16 +434,21 @@
         "translation": "symfony/translation",
         "translations": "symfony/translation",
         "translator": "symfony/translation",
+        "turbo": "symfony/ux-turbo",
         "turbo-sms-notifier": "symfony/turbo-sms-notifier",
         "turbosmsnotifier": "symfony/turbo-sms-notifier",
         "twig": "symfony/twig-pack",
         "twig-bridge": "symfony/twig-bridge",
         "twig-bundle": "symfony/twig-bundle",
+        "twig-component": "symfony/ux-twig-component",
+        "twig-components": "symfony/ux-twig-component",
         "twig-ext": "twig/extensions",
         "twig-extensions": "twig/extensions",
         "twig-exts": "twig/extensions",
         "twigbridge": "symfony/twig-bridge",
         "twigbundle": "symfony/twig-bundle",
+        "twigcomponent": "symfony/ux-twig-component",
+        "twigcomponents": "symfony/ux-twig-component",
         "twigext": "twig/extensions",
         "twigextensions": "twig/extensions",
         "twigexts": "twig/extensions",
@@ -532,6 +544,9 @@
             "1.0",
             "1.10"
         ],
+        "doctrine/deprecations": [
+            "1.0"
+        ],
         "doctrine/doctrine-bundle": [
             "1.6",
             "1.12",
@@ -607,7 +622,8 @@
             "4.7",
             "9.3",
             "9.6",
-            "10.0"
+            "10.0",
+            "11.1"
         ],
         "scheb/2fa-bundle": [
             "5.0",
@@ -902,7 +918,8 @@
             "4.3",
             "5.1",
             "5.3",
-            "6.3"
+            "6.3",
+            "7.3"
         ],
         "symfony/phrase-translation-provider": [
             "6.4"
@@ -919,6 +936,9 @@
         ],
         "symfony/primotexto-notifier": [
             "7.2"
+        ],
+        "symfony/property-info": [
+            "7.3"
         ],
         "symfony/psr7-pack": [
             "1.0"
@@ -958,6 +978,9 @@
         ],
         "symfony/scaleway-mailer": [
             "6.4"
+        ],
+        "symfony/scheduler": [
+            "7.2"
         ],
         "symfony/security-bundle": [
             "3.3",
@@ -1141,7 +1164,8 @@
         "symfony/web-profiler-bundle": [
             "3.3",
             "5.3",
-            "6.1"
+            "6.1",
+            "7.3"
         ],
         "symfony/web-server-bundle": [
             "3.3"
@@ -1150,7 +1174,8 @@
             "1.0"
         ],
         "symfony/webhook": [
-            "6.3"
+            "6.3",
+            "7.3"
         ],
         "symfony/webpack-encore-bundle": [
             "1.0",
@@ -1201,7 +1226,9 @@
         "zenstruck/foundry": [
             "1.9",
             "1.10",
-            "2.0"
+            "2.0",
+            "2.5",
+            "2.6"
         ],
         "zenstruck/messenger-test": [
             "1.7"
@@ -1290,12 +1317,21 @@
                 "symfony/framework-bundle": "<5.3"
             }
         },
+        "symfony/panther": {
+            "1.0": {
+                "symfony/flex": "<1.23.0 || >=2.0.0,<2.8.0"
+            }
+        },
         "symfony/phpunit-bridge": {
             "5.3": {
                 "symfony/framework-bundle": "<5.4"
             },
             "6.3": {
                 "phpunit/phpunit": "<9.6",
+                "symfony/framework-bundle": "<5.4"
+            },
+            "7.3": {
+                "phpunit/phpunit": "<10.0",
                 "symfony/framework-bundle": "<5.4"
             }
         },
@@ -1426,6 +1462,9 @@
             },
             "6.1": {
                 "symfony/framework-bundle": "<6.1"
+            },
+            "7.3": {
+                "symfony/framework-bundle": "<6.1"
             }
         },
         "symfony/webpack-encore-bundle": {
@@ -1443,6 +1482,14 @@
             },
             "2.0": {
                 "symfony/framework-bundle": "<5.3"
+            },
+            "2.5": {
+                "doctrine/persistence": "<2.0",
+                "symfony/framework-bundle": "<6.4"
+            },
+            "2.6": {
+                "doctrine/persistence": "<2.0",
+                "symfony/framework-bundle": "<6.4"
             }
         }
     },

@@ -1,14 +1,13 @@
 {
     "manifests": {
-        "symfony/translation": {
+        "symfony/property-info": {
             "manifest": {
                 "copy-from-recipe": {
-                    "config/": "%CONFIG_DIR%/",
-                    "translations/": "translations/"
+                    "config/": "%CONFIG_DIR%/"
                 }
             },
             "files": {
-                "config/packages/translation.php": {
+                "config/packages/property_info.php": {
                     "contents": [
                         "<?php",
                         "",
@@ -18,25 +17,17 @@
                         "",
                         "return static function (ContainerConfigurator $containerConfigurator): void {",
                         "    $containerConfigurator->extension('framework', [",
-                        "        'default_locale' => 'en',",
-                        "        'translator' => [",
-                        "            'default_path' => '%kernel.project_dir%/translations',",
-                        "            'providers' => null,",
+                        "        'property_info' => [",
+                        "            'with_constructor_extractor' => true,",
                         "        ],",
                         "    ]);",
                         "};",
                         ""
                     ],
                     "executable": false
-                },
-                "translations/.gitignore": {
-                    "contents": [
-                        ""
-                    ],
-                    "executable": false
                 }
             },
-            "ref": "887fac7595124233e0a6058e4347668911e41095"
+            "ref": "d060bba53e082b9e775e9298c8e98069898141d2"
         }
     }
 }

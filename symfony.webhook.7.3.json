@@ -1,18 +1,13 @@
 {
     "manifests": {
-        "symfony/ux-live-component": {
+        "symfony/webhook": {
             "manifest": {
-                "bundles": {
-                    "Symfony\\UX\\LiveComponent\\LiveComponentBundle": [
-                        "all"
-                    ]
-                },
                 "copy-from-recipe": {
                     "config/": "%CONFIG_DIR%/"
                 }
             },
             "files": {
-                "config/routes/ux_live_component.php": {
+                "config/routes/webhook.php": {
                     "contents": [
                         "<?php",
                         "",
@@ -21,15 +16,15 @@
                         "use Symfony\\Component\\Routing\\Loader\\Configurator\\RoutingConfigurator;",
                         "",
                         "return static function (RoutingConfigurator $routingConfigurator): void {",
-                        "    $routingConfigurator->import('@LiveComponentBundle/config/routes.php')",
-                        "        ->prefix('/_components');",
+                        "    $routingConfigurator->import('@FrameworkBundle/Resources/config/routing/webhook.php')",
+                        "        ->prefix('/webhook');",
                         "};",
                         ""
                     ],
                     "executable": false
                 }
             },
-            "ref": "971798c3f8eba8beb54713a646eb4790a854ab79"
+            "ref": "a1c68cacdfe0512e65b489534ce40f35ed24920d"
         }
     }
 }

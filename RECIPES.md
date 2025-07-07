@@ -9,6 +9,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [api-platform/symfony](https://packagist.org/packages/api-platform/symfony) | [4.0](api-platform/symfony/4.0) |  |
 | [blackfireio/blackfire-symfony-meta](https://packagist.org/packages/blackfireio/blackfire-symfony-meta) | [1.0](blackfireio/blackfire-symfony-meta/1.0) | `blackfire` |
 | [doctrine/annotations](https://packagist.org/packages/doctrine/annotations) | [1.10](doctrine/annotations/1.10) |  |
+| [doctrine/deprecations](https://packagist.org/packages/doctrine/deprecations) | [1.0](doctrine/deprecations/1.0) |  |
 | [doctrine/doctrine-bundle](https://packagist.org/packages/doctrine/doctrine-bundle) | [2.13](doctrine/doctrine-bundle/2.13) |  |
 | [doctrine/doctrine-fixtures-bundle](https://packagist.org/packages/doctrine/doctrine-fixtures-bundle) | [3.0](doctrine/doctrine-fixtures-bundle/3.0) | `orm-fixtures`, `ormfixtures` |
 | [doctrine/doctrine-migrations-bundle](https://packagist.org/packages/doctrine/doctrine-migrations-bundle) | [3.1](doctrine/doctrine-migrations-bundle/3.1) | `doctrine-migrations`, `doctrinemigrations`, `migrations` |
@@ -25,7 +26,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [nyholm/psr7](https://packagist.org/packages/nyholm/psr7) | [1.0](nyholm/psr7/1.0) |  |
 | [php-cs-fixer/shim](https://packagist.org/packages/php-cs-fixer/shim) | [3.0](php-cs-fixer/shim/3.0) | `cs-fixer-shim`, `csfixershim`, `php-cs-fixer-shim`, `phpcsfixershim` |
 | [php-http/discovery](https://packagist.org/packages/php-http/discovery) | [1.18](php-http/discovery/1.18) |  |
-| [phpunit/phpunit](https://packagist.org/packages/phpunit/phpunit) | [10.0](phpunit/phpunit/10.0) |  |
+| [phpunit/phpunit](https://packagist.org/packages/phpunit/phpunit) | [11.1](phpunit/phpunit/11.1) |  |
 | [scheb/2fa-bundle](https://packagist.org/packages/scheb/2fa-bundle) | [6.0](scheb/2fa-bundle/6.0) | `2fa` |
 | [sensio/framework-extra-bundle](https://packagist.org/packages/sensio/framework-extra-bundle) | [5.2](sensio/framework-extra-bundle/5.2) | `annot`, `annotation`, `annotations`, `annots` |
 | [sensiolabs/ansi-to-html](https://packagist.org/packages/sensiolabs/ansi-to-html) | [1.2](sensiolabs/ansi-to-html/1.2) |  |
@@ -110,12 +111,13 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [symfony/ovh-cloud-notifier](https://packagist.org/packages/symfony/ovh-cloud-notifier) | [5.1](symfony/ovh-cloud-notifier/5.1) | `ovh-cloud-notifier`, `ovhcloudnotifier` |
 | [symfony/pager-duty-notifier](https://packagist.org/packages/symfony/pager-duty-notifier) | [6.3](symfony/pager-duty-notifier/6.3) | `pager-duty-notifier`, `pagerdutynotifier` |
 | [symfony/panther](https://packagist.org/packages/symfony/panther) | [1.0](symfony/panther/1.0) | `panther` |
-| [symfony/phpunit-bridge](https://packagist.org/packages/symfony/phpunit-bridge) | [6.3](symfony/phpunit-bridge/6.3) | `phpunit-bridge`, `phpunitbridge`, `simple-phpunit`, `simplephpunit` |
+| [symfony/phpunit-bridge](https://packagist.org/packages/symfony/phpunit-bridge) | [7.3](symfony/phpunit-bridge/7.3) | `phpunit-bridge`, `phpunitbridge`, `simple-phpunit`, `simplephpunit` |
 | [symfony/phrase-translation-provider](https://packagist.org/packages/symfony/phrase-translation-provider) | [6.4](symfony/phrase-translation-provider/6.4) | `phrase-translation-provider`, `phrasetranslationprovider` |
 | [symfony/plivo-notifier](https://packagist.org/packages/symfony/plivo-notifier) | [6.3](symfony/plivo-notifier/6.3) | `plivo-notifier`, `plivonotifier` |
 | [symfony/postal-mailer](https://packagist.org/packages/symfony/postal-mailer) | [7.2](symfony/postal-mailer/7.2) | `postal-mailer`, `postalmailer` |
 | [symfony/postmark-mailer](https://packagist.org/packages/symfony/postmark-mailer) | [4.4](symfony/postmark-mailer/4.4) | `postmark-mailer`, `postmarkmailer` |
 | [symfony/primotexto-notifier](https://packagist.org/packages/symfony/primotexto-notifier) | [7.2](symfony/primotexto-notifier/7.2) | `primotexto-notifier`, `primotextonotifier` |
+| [symfony/property-info](https://packagist.org/packages/symfony/property-info) | [7.3](symfony/property-info/7.3) | `property-info`, `propertyinfo` |
 | [symfony/psr7-pack](https://packagist.org/packages/symfony/psr7-pack) | [1.0](symfony/psr7-pack/1.0) | `psr-7`, `psr-17`, `psr7`, `psr17` |
 | [symfony/pushover-notifier](https://packagist.org/packages/symfony/pushover-notifier) | [6.3](symfony/pushover-notifier/6.3) | `pushover-notifier`, `pushovernotifier` |
 | [symfony/pushy-notifier](https://packagist.org/packages/symfony/pushy-notifier) | [7.1](symfony/pushy-notifier/7.1) | `pushy-notifier`, `pushynotifier` |
@@ -126,6 +128,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [symfony/rocket-chat-notifier](https://packagist.org/packages/symfony/rocket-chat-notifier) | [5.1](symfony/rocket-chat-notifier/5.1) | `rocket-chat-notifier`, `rocketchatnotifier` |
 | [symfony/routing](https://packagist.org/packages/symfony/routing) | [7.0](symfony/routing/7.0) | `router`, `routing` |
 | [symfony/scaleway-mailer](https://packagist.org/packages/symfony/scaleway-mailer) | [6.4](symfony/scaleway-mailer/6.4) | `scaleway-mailer`, `scalewaymailer` |
+| [symfony/scheduler](https://packagist.org/packages/symfony/scheduler) | [7.2](symfony/scheduler/7.2) | `schedule`, `scheduler`, `scheduling` |
 | [symfony/security-bundle](https://packagist.org/packages/symfony/security-bundle) | [6.4](symfony/security-bundle/6.4) | `security`, `security-bundle`, `securitybundle` |
 | [symfony/sendberry-notifier](https://packagist.org/packages/symfony/sendberry-notifier) | [6.1](symfony/sendberry-notifier/6.1) | `sendberry-notifier`, `sendberrynotifier` |
 | [symfony/sendgrid-mailer](https://packagist.org/packages/symfony/sendgrid-mailer) | [4.4](symfony/sendgrid-mailer/4.4) | `sendgrid-mailer`, `sendgridmailer` |
@@ -165,20 +168,20 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [symfony/ux-icons](https://packagist.org/packages/symfony/ux-icons) | [2.17](symfony/ux-icons/2.17) | `ux-icons`, `uxicons` |
 | [symfony/ux-lazy-image](https://packagist.org/packages/symfony/ux-lazy-image) | [2.18](symfony/ux-lazy-image/2.18) | `ux-lazy-image`, `uxlazyimage` |
 | [symfony/ux-leaflet-map](https://packagist.org/packages/symfony/ux-leaflet-map) | [2.19](symfony/ux-leaflet-map/2.19) | `ux-leaflet-map`, `uxleafletmap` |
-| [symfony/ux-live-component](https://packagist.org/packages/symfony/ux-live-component) | [2.6](symfony/ux-live-component/2.6) | `ux-live-component`, `uxlivecomponent` |
+| [symfony/ux-live-component](https://packagist.org/packages/symfony/ux-live-component) | [2.6](symfony/ux-live-component/2.6) | `live-component`, `live-components`, `livecomponent`, `livecomponents`, `ux-live-component`, `uxlivecomponent` |
 | [symfony/ux-map](https://packagist.org/packages/symfony/ux-map) | [2.19](symfony/ux-map/2.19) | `ux-map`, `uxmap` |
 | [symfony/ux-react](https://packagist.org/packages/symfony/ux-react) | [2.9](symfony/ux-react/2.9) | `ux-react`, `uxreact` |
 | [symfony/ux-svelte](https://packagist.org/packages/symfony/ux-svelte) | [2.9](symfony/ux-svelte/2.9) | `ux-svelte`, `uxsvelte` |
 | [symfony/ux-translator](https://packagist.org/packages/symfony/ux-translator) | [2.9](symfony/ux-translator/2.9) | `ux-translator`, `uxtranslator` |
-| [symfony/ux-turbo](https://packagist.org/packages/symfony/ux-turbo) | [2.20](symfony/ux-turbo/2.20) | `ux-turbo`, `uxturbo` |
-| [symfony/ux-twig-component](https://packagist.org/packages/symfony/ux-twig-component) | [2.13](symfony/ux-twig-component/2.13) | `ux-twig-component`, `uxtwigcomponent` |
+| [symfony/ux-turbo](https://packagist.org/packages/symfony/ux-turbo) | [2.20](symfony/ux-turbo/2.20) | `turbo`, `ux-turbo`, `uxturbo` |
+| [symfony/ux-twig-component](https://packagist.org/packages/symfony/ux-twig-component) | [2.13](symfony/ux-twig-component/2.13) | `twig-component`, `twig-components`, `twigcomponent`, `twigcomponents`, `ux-twig-component`, `uxtwigcomponent` |
 | [symfony/ux-vue](https://packagist.org/packages/symfony/ux-vue) | [2.9](symfony/ux-vue/2.9) | `ux-vue`, `uxvue` |
 | [symfony/validator](https://packagist.org/packages/symfony/validator) | [7.0](symfony/validator/7.0) | `validation`, `validator` |
 | [symfony/vonage-notifier](https://packagist.org/packages/symfony/vonage-notifier) | [5.4](symfony/vonage-notifier/5.4) | `vonage-notifier`, `vonagenotifier` |
-| [symfony/web-profiler-bundle](https://packagist.org/packages/symfony/web-profiler-bundle) | [6.1](symfony/web-profiler-bundle/6.1) | `web-profiler-bundle`, `webprofilerbundle` |
+| [symfony/web-profiler-bundle](https://packagist.org/packages/symfony/web-profiler-bundle) | [7.3](symfony/web-profiler-bundle/7.3) | `web-profiler-bundle`, `webprofilerbundle` |
 | [symfony/web-server-bundle](https://packagist.org/packages/symfony/web-server-bundle) | [3.3](symfony/web-server-bundle/3.3) | `server`, `web-server`, `web-server-bundle`, `webserver`, `webserverbundle` |
 | [symfony/webapp-pack](https://packagist.org/packages/symfony/webapp-pack) | [1.0](symfony/webapp-pack/1.0) | `webapp` |
-| [symfony/webhook](https://packagist.org/packages/symfony/webhook) | [6.3](symfony/webhook/6.3) | `webhook` |
+| [symfony/webhook](https://packagist.org/packages/symfony/webhook) | [7.3](symfony/webhook/7.3) | `webhook` |
 | [symfony/webpack-encore-bundle](https://packagist.org/packages/symfony/webpack-encore-bundle) | [2.0](symfony/webpack-encore-bundle/2.0) | `encore`, `ux`, `webpack`, `webpack-encore`, `webpack-encore-bundle`, `webpackencore`, `webpackencorebundle` |
 | [symfony/workflow](https://packagist.org/packages/symfony/workflow) | [3.3](symfony/workflow/3.3) | `workflow` |
 | [symfony/yunpian-notifier](https://packagist.org/packages/symfony/yunpian-notifier) | [5.4](symfony/yunpian-notifier/5.4) | `yunpian-notifier`, `yunpiannotifier` |
@@ -193,5 +196,5 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [twig/markdown-extension](https://packagist.org/packages/twig/markdown-extension) | [1.0](twig/markdown-extension/1.0) |  |
 | [willdurand/js-translation-bundle](https://packagist.org/packages/willdurand/js-translation-bundle) | [2.0](willdurand/js-translation-bundle/2.0) | `js-translation`, `js-translator`, `jstranslation`, `jstranslator` |
 | [zenstruck/browser](https://packagist.org/packages/zenstruck/browser) | [1.9](zenstruck/browser/1.9) | `browser` |
-| [zenstruck/foundry](https://packagist.org/packages/zenstruck/foundry) | [2.0](zenstruck/foundry/2.0) | `foundry` |
+| [zenstruck/foundry](https://packagist.org/packages/zenstruck/foundry) | [2.6](zenstruck/foundry/2.6) | `foundry` |
 | [zenstruck/messenger-test](https://packagist.org/packages/zenstruck/messenger-test) | [1.7](zenstruck/messenger-test/1.7) | `messenger-test`, `messengertest` |
