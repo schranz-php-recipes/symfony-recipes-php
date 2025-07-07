@@ -6,6 +6,6 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 
 return static function (ContainerConfigurator $containerConfigurator): void {
     $containerConfigurator->extension('symfonycasts_tailwind', [
-        'binary_version' => 'v3.4.17',
+        'binary_version' => 'v4.1.11',
     ]);
 };
