@@ -23,10 +23,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         'agent' => [
             'default' => [
                 'platform' => 'ai.platform.openai',
-                'model' => [
-                    'class' => 'Symfony\AI\Platform\Bridge\OpenAi\Gpt',
-                    'name' => 'gpt-4o-mini',
-                ],
+                'model' => 'gpt-4o-mini',
                 'system_prompt' => 'You are a helpful assistant and you can provide the current date and time.
 ',
                 'tools' => ['Symfony\AI\Agent\Toolbox\Tool\Clock'],
