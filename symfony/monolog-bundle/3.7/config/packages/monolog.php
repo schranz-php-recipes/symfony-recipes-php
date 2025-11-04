@@ -51,6 +51,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
                     'action_level' => 'error',
                     'handler' => 'nested',
                     'excluded_http_codes' => [404, 405],
+                    'channels' => ['!deprecation'],
                     'buffer_size' => 50,
                 ],
                 'nested' => [
