@@ -2,18 +2,9 @@
 
 declare(strict_types=1);
 
-use Symfony\AI\Agent\Toolbox\Tool\Clock;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 
 return static function (ContainerConfigurator $containerConfigurator): void {
-    $services = $containerConfigurator->services();
-
-    $services->defaults()
-        ->autowire()
-        ->autoconfigure();
-
-    $services->set(Clock::class);
-
     $containerConfigurator->extension('ai', [
         'platform' => [
             'openai' => [
@@ -23,10 +14,9 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         'agent' => [
             'default' => [
                 'platform' => 'ai.platform.openai',
-                'model' => 'gpt-4o-mini',
-                'system_prompt' => 'You are a helpful assistant and you can provide the current date and time.
+                'model' => 'gpt-5-mini',
+                'prompt' => 'You are a pirate and you write funny.
 ',
-                'tools' => ['Symfony\AI\Agent\Toolbox\Tool\Clock'],
             ],
         ],
     ]);
