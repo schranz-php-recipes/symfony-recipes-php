@@ -8,4 +8,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $containerConfigurator->extension('ux_translator', [
         'dump_directory' => '%kernel.project_dir%/var/translations',
     ]);
+    if ($containerConfigurator->env() === 'prod') {
+        $containerConfigurator->extension('ux_translator', null);
+    }
 };
