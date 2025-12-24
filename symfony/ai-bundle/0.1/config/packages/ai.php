@@ -6,18 +6,8 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 
 return static function (ContainerConfigurator $containerConfigurator): void {
     $containerConfigurator->extension('ai', [
-        'platform' => [
-            'openai' => [
-                'api_key' => '%env(OPENAI_API_KEY)%',
-            ],
-        ],
-        'agent' => [
-            'default' => [
-                'platform' => 'ai.platform.openai',
-                'model' => 'gpt-5-mini',
-                'prompt' => 'You are a pirate and you write funny.
-',
-            ],
-        ],
+        'platform' => null,
+        'agent' => null,
+        'store' => null,
     ]);
 };
