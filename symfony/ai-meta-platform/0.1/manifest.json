@@ -1,8 +1,0 @@
-{
-    "copy-from-recipe": {
-        "config/": "%CONFIG_DIR%/"
-    },
-    "env": {
-        "META_API_KEY": ""
-    }
-}
