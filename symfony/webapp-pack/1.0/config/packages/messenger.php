@@ -11,10 +11,6 @@ return static function (ContainerConfigurator $containerConfigurator): void {
             'transports' => [
                 'async' => [
                     'dsn' => '%env(MESSENGER_TRANSPORT_DSN)%',
-                    'options' => [
-                        'use_notify' => true,
-                        'check_delayed_interval' => 60000,
-                    ],
                     'retry_strategy' => [
                         'max_retries' => 3,
                         'multiplier' => 2,
