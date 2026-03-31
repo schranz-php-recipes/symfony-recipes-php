@@ -12,7 +12,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         ],
         'orm' => [
             'validate_xml_mapping' => true,
-            'naming_strategy' => 'doctrine.orm.naming_strategy.underscore_number_aware',
+            'naming_strategy' => 'doctrine.orm.naming_strategy.underscore',
             'identity_generation_preferences' => [
                 'Doctrine\DBAL\Platforms\PostgreSQLPlatform' => 'identity',
             ],
@@ -25,9 +25,6 @@ return static function (ContainerConfigurator $containerConfigurator): void {
                     'prefix' => 'App\Entity',
                     'alias' => 'App',
                 ],
-            ],
-            'controller_resolver' => [
-                'auto_mapping' => false,
             ],
         ],
     ]);
