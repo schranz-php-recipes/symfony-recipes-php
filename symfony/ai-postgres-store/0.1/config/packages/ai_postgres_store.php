@@ -9,7 +9,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         'store' => [
             'postgres' => [
                 'default' => [
-                    'connection' => 'default',
+                    'dbal_connection' => 'doctrine.dbal.default_connection',
                 ],
             ],
         ],

@@ -7,7 +7,7 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 return static function (ContainerConfigurator $containerConfigurator): void {
     $containerConfigurator->extension('ai', [
         'platform' => [
-            'docker_model_runner' => null,
+            'dockermodelrunner' => null,
         ],
     ]);
 };
