@@ -8,7 +8,9 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $containerConfigurator->extension('ai', [
         'platform' => [
             'generic' => [
-                'base_url' => '%env(GENERIC_BASE_URL)%',
+                'default' => [
+                    'base_url' => '%env(GENERIC_BASE_URL)%',
+                ],
             ],
         ],
     ]);
